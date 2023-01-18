@@ -5,7 +5,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="font-serif ">
+    <div className="font-serif">
       <nav className="fixed w-full">
         <NavBar />
       </nav>

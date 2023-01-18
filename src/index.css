@@ -2,6 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-/* #home{
-   background-image:url('./images/img.jpg');
-}     */
+#home{
+   background:
+      repeating-conic-gradient(from 30deg,#0000 0 120deg,rgba(222, 222, 222, 0.28) 0 180deg) 
+       102px 58.854px,
+      repeating-conic-gradient(from 30deg,rgba(200, 200, 200, 0.16) 0 60deg,rgba(00, 200, 200, 0) 0 120deg,rgba(200, 200, 200, 0.28) 0 180deg);
+      background-size: 204px 118px;
+
+
+      /* background-image:url('./images/photo.JPG');
+      background-repeat:no-repeat;
+      background-position:right ;
+      background-size:40%  */
+}   
+
+@keyframes text-clip {
+   from {
+     clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+   }
+   to {
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+}
+@keyframes inner-left {
+   from {
+      transform: translateX(-200%);
+   }
+   to {
+      transform: none;
+   }
+} 
+/* @keyframes outer-left {
+   from {
+     transform: translateX(50%);
+   }
+   to {
+     transform: none;
+   }
+} */
+
+#firstName {
+   animation: text-clip 2s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+#lastName {
+   animation: text-clip 2s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+#title {
+   animation: inner-left 2s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+}  
+ /* animation: inner-left 1s 1s ease both,
+ text-clip 2s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both; */
+ 
+
+
+ 
