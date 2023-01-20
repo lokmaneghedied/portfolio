@@ -8,12 +8,6 @@
        102px 58.854px,
       repeating-conic-gradient(from 30deg,rgba(200, 200, 200, 0.16) 0 60deg,rgba(00, 200, 200, 0) 0 120deg,rgba(200, 200, 200, 0.28) 0 180deg);
       background-size: 204px 118px;
-
-
-      /* background-image:url('./images/photo.JPG');
-      background-repeat:no-repeat;
-      background-position:right ;
-      background-size:40%  */
 }   
 
 @keyframes text-clip {
@@ -32,27 +26,41 @@
       transform: none;
    }
 } 
-/* @keyframes outer-left {
+@keyframes outer-left {
    from {
-     transform: translateX(50%);
+     transform: translateX(100%);
    }
    to {
      transform: none;
    }
-} */
+}
 
 #firstName {
-   animation: text-clip 2s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+   animation: text-clip 1s 0.1s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 #lastName {
-   animation: text-clip 2s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
+   animation: text-clip 1s 0.2s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 #title {
-   animation: inner-left 2s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+   animation: inner-left 1.5s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both;
 }  
  /* animation: inner-left 1s 1s ease both,
  text-clip 2s 0.5s cubic-bezier(0.5, 0, 0.1, 1) both; */
- 
 
+#nav {
+  animation: outer-left 1s 0.1s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
 
- 
+.reveal{
+   position: relative;
+   transform: translateX(-100px);
+   opacity: 0;
+   filter:blur(5px);
+   transition: 0.75s all ease;
+}
+
+.reveal.active{
+   transform: translateX(0);
+   opacity: 1;
+   filter:blur(0);
+}
