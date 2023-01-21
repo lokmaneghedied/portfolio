@@ -21,8 +21,8 @@ const Skills = () => {
                     <span className='text-xl tracking-wider'>. . . . . . . .</span>
                 </div>
             </div>
-            <div className="reveal md:flex md:justify-around md:items-center h-5/6 px-4 space-y-4">
-                <div className="relative rounded-2xl md:h-5/6 md:w-1/5">
+            <div className="md:flex md:justify-around md:items-center h-5/6 px-4 space-y-4">
+                <div className="reveal relative rounded-2xl md:h-5/6 md:w-1/5">
                     <img src={img} alt="" className="h-full rounded-2xl bg-gray-100 shadow-2xl "/>
                     <div className='grid justify-items-center px-2 py-1 absolute inset-0 text-yellow-300'>
                         <h1 className="font-semibold place-self-center text-white">. . . . Front-End . . . . </h1>
@@ -30,7 +30,7 @@ const Skills = () => {
                         <p className='backdrop-blur-sm rounded-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, numquam suscipit iste earum de voluptas, soluta odit mollitia quo eaque esse, ipsum et magnam porro. Et, tenetur odio.</p>
                     </div>
                 </div>
-                <div className="relative rounded-2xl md:h-3/4 md:w-1/5">
+                <div className="reveal relative rounded-2xl md:h-3/4 md:w-1/5">
                     <img src={img2} alt="" className="h-full rounded-2xl bg-gray-100 shadow-2xl"/>
                     <div className='grid justify-items-center px-2 py-1 absolute inset-0 text-yellow-300'>
                         <h1 className="font-semibold place-self-center text-white">. . . . Back-End . . . .</h1>
@@ -38,7 +38,7 @@ const Skills = () => {
                         <p className='backdrop-blur-sm rounded-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti itaque expedita ipsum impedit? Neque adipisc magni dolorem iure.</p>
                     </div>
                 </div>
-                <div className="relative rounded-2xl md:h-4/5 md:w-1/5">
+                <div className="reveal relative rounded-2xl md:h-4/5 md:w-1/5">
                     <img src={img3} alt="" className="h-full rounded-2xl bg-gray-100 shadow-2xl"/>
                     <div className='grid justify-items-center px-2 py-1 absolute inset-0 text-yellow-300'>
                         <h1 className="font-semibold place-self-center text-white">. . . . Back-End . . . .</h1>
@@ -46,7 +46,7 @@ const Skills = () => {
                         <p className='backdrop-blur-sm rounded-lg'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At veritatis nisi quasi tempore. Ab nulla dolor ipsa? Deserunt officiis corrupti nemo non cupiditate temporibus quis alias sed</p>
                     </div>
                 </div>
-                <div className="relative rounded-2xl md:h-5/6 md:w-1/5">
+                <div className="reveal relative rounded-2xl md:h-5/6 md:w-1/5">
                     <img src={img4} alt="" className="h-full rounded-2xl bg-gray-100 shadow-2xl"/>
                     <div className='grid justify-items-center px-2 py-1 absolute inset-0 text-yellow-300'>
                         <h1 className="font-semibold place-self-center text-white">. . . . Back-End . . . .</h1>

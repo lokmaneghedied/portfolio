@@ -1,7 +1,7 @@
-import logoLi from '../images/logoLi.png'
-import logoGmail from '../images/logoGmail.png'
-import logoMaps from '../images/logoMaps.png'
-import logoPh from '../images/logoPh.png'
+import linkedin from '../images/linkedin.png'
+import gmail from '../images/gmail.png'
+import maps from '../images/maps.png'
+import phone from '../images/phone.png'
 import Footer from './Footer'
 const Contact = () => {
     return ( 
@@ -19,37 +19,37 @@ const Contact = () => {
                     <span className='text-xl tracking-wider'>. . . . . . . .</span>
                 </div>
             </div>
-            <div className="reveal lg:flex lg:justify-around lg:items-center lg:h-96 grid justify-items-center md:grid-rows-2 md:grid-cols-2 gap-0 h-full md:space-y-0 space-y-4">
-                <div className="card bg-slate-800 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2">
+            <div className="lg:flex lg:justify-around lg:items-center lg:h-96 grid justify-items-center md:grid-rows-2 md:grid-cols-2 gap-0 h-full md:space-y-0 space-y-4">
+                <div className="reveal card bg-slate-800 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2">
                     <div className="icon">
-                    <img src={logoPh} alt="" />
+                    <img src={phone} alt="" />
                     </div>
                     <div className="content">
                         <h3>Phone Number: </h3>
                         <p>+213 672 13 26 33</p>
                     </div>
                 </div>
-                <div className="card bg-slate-800 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2">
+                <div className="reveal card bg-slate-800 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2">
                     <div className="icon">
-                    <img src={logoGmail} alt="" />
+                    <img src={gmail} alt="" />
                     </div>
                     <div className="content">
                         <h3>E-mail:</h3>
                         <p>lokmane.ghedied@gmail.com</p>
                     </div>
                 </div>
-                <div className="card bg-slate-800 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3">
+                <div className="reveal card bg-slate-800 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3">
                     <div className="icon">
-                        <img src={logoMaps} alt="" />
+                        <img src={maps} alt="" />
                     </div>
                     <div className="content">
                         <h3>I live in:</h3>
                         <p>Jijel/Algeria</p>
                     </div>
                 </div>
-                <div className="card bg-slate-800 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3">
+                <div className="reveal card bg-slate-800 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3">
                     <div className="icon">
-                    <img src={logoLi} alt="" />
+                    <img src={linkedin} alt="" />
                     </div>
                     <div className="content">
                         <h3>LinkedIn:</h3>
@@ -61,7 +61,7 @@ const Contact = () => {
         </div>
      );
 }
- 
+
 export default Contact;
             // <button className="flex justify-center items-center h-fit p-2 space-x-1 rounded-lg transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-red-500 hover:text-white duration-300">
             //     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">

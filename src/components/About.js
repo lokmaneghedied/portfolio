@@ -5,7 +5,7 @@ import webDev from '../images/webDev.png'
 
 const About = () => {
     return ( 
-        <div id='about' className="grid justify-items-center h-screen bg-gradient-to-t from-red-700 to-red-500">
+        <div id='about' className="grid justify-items-center h-screen bg-gradient-to-t from-red-700 to-red-500 rounded-b-3xl">
             <img src={webDev} alt="" />
             <div className=' grid content-between'>
                 <div className='grid justify-items-center content-start'>

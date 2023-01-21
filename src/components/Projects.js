@@ -14,29 +14,29 @@ const Projects = () => {
                     <span className='text-xl tracking-wider'>. . . . . . . .</span>
                 </div>
             </div>
-            <div className="reveal h-5/6 p-5 space-y-2 md:space-y-0">
-                <div className='md:flex md:justify-start md:h-72 h-60 bg-slate-800 rounded-2xl md:rounded-b-none'>
+            <div className="h-5/6 p-5 space-y-2 md:space-y-0">
+                <div className='reveal md:flex md:justify-start md:h-72 h-60 bg-slate-800 rounded-2xl md:rounded-b-none'>
                     <span className='grid justify-items-start content-center p-2 md:w-1/2 w-full md:h-full h-1/2 text-white'>
                         <h1>- State Ingineer In Mining Engineering And Master in Advanced Land Control</h1>
                         <p className='px-2'>09/2017 – 11/2020: National school of mines and metallurgy, Algeria</p>
                     </span>
                     <span className='md:w-1/2 w-full md:h-full h-1/2 rounded-b-2xl md:rounded-b-none md:rounded-tr-2xl bg-green-300'></span>
                 </div>
-                <div className='md:flex md:justify-start h-72 bg-slate-800 rounded-2xl md:rounded-none'>
+                <div className='reveal md:flex md:justify-start h-72 bg-slate-800 rounded-2xl md:rounded-none'>
                     <span className='md:w-1/2 w-full md:h-full h-1/2 bg-green-300 rounded-b-2xl md:rounded-b-none'></span>
                     <span className='grid justify-items-start content-center p-2 md:w-1/2 w-full md:h-full h-1/2 text-white'>
                         <h1>- State Ingineer In Mining Engineering And Master in Advanced Land Control</h1>
                         <p className='px-2'>09/2017 – 11/2020: National school of mines and metallurgy, Algeria</p>
                     </span>
                 </div>
-                <div className='md:flex md:justify-start h-72 bg-slate-800 rounded-2xl md:rounded-none'>
+                <div className='reveal md:flex md:justify-start h-72 bg-slate-800 rounded-2xl md:rounded-none'>
                     <span className='grid justify-items-start content-center p-2 md:w-1/2 w-full md:h-full h-1/2 text-white'>
                         <h1>- State Ingineer In Mining Engineering And Master in Advanced Land Control</h1>
                         <p className='px-2'>09/2017 – 11/2020: National school of mines and metallurgy, Algeria</p>
                     </span>
                     <span className='md:w-1/2 w-full md:h-full h-1/2 bg-green-300 rounded-b-2xl md:rounded-b-none'></span>
                 </div>
-                <div className='md:flex md:justify-start h-72 bg-slate-800 rounded-2xl md:rounded-t-none shadow-xl md:shadow-none'>
+                <div className='reveal md:flex md:justify-start h-72 bg-slate-800 rounded-2xl md:rounded-t-none shadow-xl md:shadow-none'>
                     <span className='md:w-1/2 w-full md:h-full h-1/2 rounded-t-2xl md:rounded-t-none md:rounded-bl-2xl bg-green-300'></span>
                     <img src="" alt="" />
                     <span className='grid justify-items-start content-center p-2 md:w-1/2 w-full md:h-full h-1/2 text-white'>
