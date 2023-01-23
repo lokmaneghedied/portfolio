@@ -19,7 +19,7 @@ const Contact = () => {
                     <span className='text-xl tracking-wider'>. . . . . . . .</span>
                 </div>
             </div>
-            <div className="lg:flex lg:justify-around lg:items-center lg:h-96 grid lg-space-y-0 justify-items-center md:grid-rows-2 md:grid-cols-2 md:gap-2 h-full md:space-y-0 space-y-4">
+            <div className="lg:flex lg:justify-around lg:items-center lg:h-96 grid justify-items-center md:grid-rows-2 md:grid-cols-2 md:gap-2 h-full md:space-y-0 space-y-4">
                 <div className="reveal card bg-slate-800 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2">
                     <div className="icon">
                     <img src={phone} alt="" />
