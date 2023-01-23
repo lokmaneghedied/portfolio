@@ -1,12 +1,16 @@
 import fb from '../images/fb.png'
 import insta from '../images/insta.png'
 import twitter from '../images/twitter.png'
-import whatsup from '../images/whatsup.png'
+import whatsapp from '../images/whatsapp.png'
+import git from '../images/git.png'
 
 const Footer = () => {
     return ( 
         <footer className="grid justify-items-center content-center bg-slate-800 h-28 space-y-4">
             <div className='flex justify-center items-center space-x-2'>
+                <a href="https://github.com/lokmaneghedied" target='_blanck' className='h-10 w-10 hover:scale-95'>
+                    <img src={git} alt=""/>
+                </a>
                 <a href="https://www.facebook.com/lokmane.ghedied" target='_blanck' className='h-10 w-10 hover:scale-95'>
                     <img src={fb} alt=""/>
                 </a>
@@ -17,7 +21,7 @@ const Footer = () => {
                     <img src={twitter} alt="" />
                 </a>
                 <a href="https://call.whatsapp.com/voice/hRR4tHw3q9A8UZkeUsiJYP" target='_blanck' className='h-10 w-10 hover:scale-95'>
-                    <img src={whatsup} alt=""/>
+                    <img src={whatsapp} alt=""/>
                 </a>
             </div>
             <div className='text-white text-xs h-1/2'>Created on january 2023</div>

@@ -113,7 +113,7 @@
  
 .certificationBtn {
    --primary-color: #00ff00;
-   --hovered-color: #ffe100;
+   --hovered-color: #00ff00;
    position: relative;
    display: flex;
    font-weight: 600;
@@ -140,7 +140,7 @@
   transition: 0.3s ease-out;
 }
 
-.certificationBtn p::before {
+/* .certificationBtn p::before {
   position: absolute;
   content: "Certification";
   width: 0%;
@@ -148,7 +148,7 @@
   color: var(--hovered-color);
   overflow: hidden;
   transition: 0.3s ease-out;
-}
+} */
 
 .certificationBtn:hover::after {
   width: 100%;
@@ -169,4 +169,62 @@
   position: relative;
   width: 15px;
   transition-delay: 0.2s;
+}
+
+///MoreBtn
+.moreBtn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+}
+
+.moreBtn {
+  --primary-color: #ffe100;
+  --hovered-color: #ffe100;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.moreBtn p {
+ margin: 0;
+ position: relative;
+ font-size: 20px;
+ color: var(--primary-color)
+}
+
+.moreBtn::after {
+ position: absolute;
+ content: "";
+ width: 0;
+ left: 0;
+ bottom: -7px;
+ background: var(--hovered-color);
+ height: 2px;
+ transition: 0.3s ease-out;
+}
+
+.moreBtn:hover::after {
+ width: 100%;
+}
+
+.moreBtn:hover p::before {
+ width: 100%;
+}
+
+.moreBtn:hover svg {
+ transform: translateX(4px);
+ color: var(--hovered-color)
+}
+
+.moreBtn svg {
+ color: var(--primary-color);
+ transition: 0.2s;
+ position: relative;
+ width: 15px;
+ transition-delay: 0.2s;
 }

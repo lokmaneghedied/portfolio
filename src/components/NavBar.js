@@ -14,11 +14,11 @@ const NavBar = () => {
                     </svg>
                 </button>
                 {toggleNavBar && <nav id="nav" className='flex items-center text-red-500 sm:font-extrabold'>
-                    <a href="#home" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-red-500 underline decoration-dashed underline-offset-4 sm:uppercase'> Home</a>
-                    <a href="#about" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-red-500 underline decoration-dashed underline-offset-4 sm:uppercase'> About</a>
-                    <a href="#skills" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-red-500 underline decoration-dashed underline-offset-4 sm:uppercase'> Skills</a>
-                    <a href="#projects" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-red-500 underline decoration-dashed underline-offset-4 sm:uppercase'> Projects</a>
-                    <a href="#contact" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-red-500 underline decoration-dashed underline-offset-4 sm:uppercase'> Contact</a>
+                    <a href="#home" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-white underline decoration-dashed underline-offset-4 sm:uppercase'> Home</a>
+                    <a href="#about" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-white underline decoration-dashed underline-offset-4 sm:uppercase'> About</a>
+                    <a href="#skills" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-white underline decoration-dashed underline-offset-4 sm:uppercase'> Skills</a>
+                    <a href="#projects" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-white underline decoration-dashed underline-offset-4 sm:uppercase'> Projects</a>
+                    <a href="#contact" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-white underline decoration-dashed underline-offset-4 sm:uppercase'> Contact</a>
                 </nav>}
         </div>
      );
