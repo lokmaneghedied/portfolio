@@ -5,7 +5,7 @@ import phone from '../images/phone.png'
 import Footer from './Footer'
 const Contact = () => {
     return ( 
-        <div id="contact" className="h-full lg:space-y-0 space-y-4 pt-7">
+        <div id="contact" className="h-fit lg:space-y-0 space-y-4 pt-7">
             <div className='grid justify-items-center content-center h-1/6'>
                 <h1 className='text-2xl tracking-wider font-extrabold animate-pulse '>
                     <span className='text-red-500 md:uppercase'>Contact </span>
