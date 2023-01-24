@@ -1,7 +1,7 @@
 import photo from '../images/photo.jpg'
 const Home = () => {
     return ( 
-        <div id="home" className="h-screen w-screen flex justify-start items-center">
+        <div id="home" className="md:h-screen h-full w-screen flex justify-start items-center">
                 <div className="grid content-center place-content-start absolute pl-5 md:pl-16 lg:pl-24 ">
                     <h1 id='firstName' className="lg:text-4xl sm:text-2xl text-xl tracking-wider font-extrabold ">
                         <span className='text-red-500'>L</span>
