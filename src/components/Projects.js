@@ -1,7 +1,11 @@
+import projectImg from '../images/projectImg.jpg'
+import pyPr from '../images/pyPr.jpg'
+import jsPr from '../images/jsPr.jpg'
+
 const Projects = () => {
     return ( 
-        <div id='projects' className="h-full pt-4">
-            <div className='grid justify-items-center content-center h-1/6'>
+        <div id='projects' className="h-full pt-6 space-y-4">
+            <div className='grid justify-items-center content-center h-1/6 '>
                 <h1 className='text-2xl tracking-wider font-extrabold animate-pulse '>
                     <span className="md:uppercase">Recent </span>
                     <span className='text-red-500 md:uppercase'>Projects </span>
@@ -14,41 +18,69 @@ const Projects = () => {
                     <span className='text-xl tracking-wider'>. . . . . . . .</span>
                 </div>
             </div>
-            <div className="h-5/6 p-5 space-y-2 md:space-y-0">
-                <div className='reveal md:flex md:justify-start md:h-72 h-60 bg-slate-800 rounded-2xl md:rounded-b-none'>
-                    <span className='grid justify-items-start content-center p-2 md:w-1/2 w-full md:h-full h-1/2 text-white'>
-                        <h1>- State Ingineer In Mining Engineering And Master in Advanced Land Control</h1>
-                        <p className='px-2'>09/2017 – 11/2020: National school of mines and metallurgy, Algeria</p>
-                    </span>
-                    <span className='md:w-1/2 w-full md:h-full h-1/2 rounded-b-2xl md:rounded-b-none md:rounded-tr-2xl bg-green-300'></span>
+            <div className="grid justify-items-center content-center space-y-1 h-4/5 ">
+                <div className='reveal lg:flex lg:justify-center lg:items-center lg:h-72 xl:w-10/12 w-11/12 grid justify-items-center h-full'>
+                    <div className='grid content-center bg-blue-100 p-2 m-1 rounded-xl shadow-inner lg:h-5/6 w-full h-fit'>
+                        <h1 className='p-1 font-bold text-lg'>MySpace</h1>
+                        <p>● Full stack web application: where the user can create new post & edit,delete the post and add a comment.</p>
+                        <p>● languages: Python & JavaScript</p>
+                        <p>● Comes in three versions:</p>
+                        <p>-Vue.js & Flask with a relational database <small>(SQLAlchemy)</small>.</p>
+                        <p>-Vue.js & Flask with a non-relational database <small>(MongoDB)</small>.</p>
+                        <p>-React.js & Flask with a non-relational database <small>(MongoDB)</small>.</p>
+                        <a href='https://' target='_blanck' className='place-self-end'>
+                            <button className='projectBtn'>
+                                <p>Link to project</p>
+                                <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" className="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                    <img src={projectImg} alt="" className='lg:h-full h-fit' />
                 </div>
-                <div className='reveal md:flex md:justify-start h-72 bg-slate-800 rounded-2xl md:rounded-none'>
-                    <span className='md:w-1/2 w-full md:h-full h-1/2 bg-green-300 rounded-b-2xl md:rounded-b-none'></span>
-                    <span className='grid justify-items-start content-center p-2 md:w-1/2 w-full md:h-full h-1/2 text-white'>
-                        <h1>- State Ingineer In Mining Engineering And Master in Advanced Land Control</h1>
-                        <p className='px-2'>09/2017 – 11/2020: National school of mines and metallurgy, Algeria</p>
-                    </span>
+                <div className='reveal lg:flex lg:justify-center lg:items-center lg:h-72 xl:w-10/12 w-11/12 grid justify-items-center h-full'>
+                    <div className='grid content-center bg-blue-100 p-2 m-1 rounded-xl shadow-inner lg:h-5/6 w-full h-fit'>
+                        <h1 className='p-1 font-bold text-lg'>Python's Projects</h1>
+                        <p>● Arithmetic Formatter.</p>
+                        <p>● Time Calculator.</p>
+                        <p>● Budget App.</p>
+                        <p>● Polygon Area Calculator.</p>
+                        <p>● Probability Calculator.</p>
+                        <a href='https://github.com/lokmaneghedied/Python-s-projects' target='_blanck' className='place-self-end'>
+                            <button className='projectBtn'>
+                                <p>Link to project</p>
+                                <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" className="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                    <img src={pyPr} alt="" className='lg:h-full h-fit' />
                 </div>
-                <div className='reveal md:flex md:justify-start h-72 bg-slate-800 rounded-2xl md:rounded-none'>
-                    <span className='grid justify-items-start content-center p-2 md:w-1/2 w-full md:h-full h-1/2 text-white'>
-                        <h1>- State Ingineer In Mining Engineering And Master in Advanced Land Control</h1>
-                        <p className='px-2'>09/2017 – 11/2020: National school of mines and metallurgy, Algeria</p>
-                    </span>
-                    <span className='md:w-1/2 w-full md:h-full h-1/2 bg-green-300 rounded-b-2xl md:rounded-b-none'></span>
+                <div className='reveal lg:flex lg:justify-center lg:items-center lg:h-72 xl:w-10/12 w-11/12 grid justify-items-center h-full'>
+                    <div className='grid content-center bg-blue-100 p-2 m-1 rounded-xl shadow-inner lg:h-5/6 w-full h-fit'>
+                        <h1 className='p-1 font-bold text-lg'>javaScript's Projects</h1>
+                        <p>● Palindrome Checker.</p>
+                        <p>● Roman Numeral Converter.</p>
+                        <p>● Caesars Cipher.</p>
+                        <p>● Telephone Number Validator.</p>
+                        <p>● Cash Register.</p>
+                        <a href='https://github.com/lokmaneghedied/JavaScript-s-projects' target='_blanck' className='place-self-end'>
+                            <button className='projectBtn'>
+                                <p>Link to project</p>
+                                <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" className="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                    <img src={jsPr} alt="" className='lg:h-full h-fit' />
                 </div>
-                <div className='reveal md:flex md:justify-start h-72 bg-slate-800 rounded-2xl md:rounded-t-none shadow-xl md:shadow-none'>
-                    <span className='md:w-1/2 w-full md:h-full h-1/2 rounded-t-2xl md:rounded-t-none md:rounded-bl-2xl bg-green-300'></span>
-                    <img src="" alt="" />
-                    <span className='grid justify-items-start content-center p-2 md:w-1/2 w-full md:h-full h-1/2 text-white'>
-                        <h1>- Preparatory Class In Sciences And Technologies</h1>
-                        <p className='px-2'>09/2015 – 06/2017: National School Of Public Works, Algeria</p>
-                        <p>- Main courses :</p>
-                        <p className='px-3'>Algebra, Mathematical Analysis ,Physics , Chemistry, Rational Mechanics, Computer Science, Statistics, Probalities...</p>
-                    </span>
-                </div>
+                
             </div>
         </div>
      );
 }
- 
+
 export default Projects;
