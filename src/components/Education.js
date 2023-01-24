@@ -23,7 +23,7 @@ const Education = () => {
                 <div className='reveal md:flex md:justify-start items-center h-1/4 bg-slate-800 rounded-2xl md:rounded-b-none border-b md:border-white'>
                     <span className='grid justify-items-start content-center p-2 md:w-1/2 w-full md:h-full h-1/2 text-white space-y-2 md:space-y-4'>
                         <h1 className='sm:uppercase'>● State Engineer In Mining Engineering And Master in Advanced Land Control</h1>
-                        <p className='px-2'>09/2017 – 11/2020: National school of mines and metallurgy, Algeria</p>
+                        <p className='px-2'>09/2017 – 11/2020: National school of mining and metallurgy, Algeria</p>
                     </span>
                     <img src={mining} alt="" className='md:w-1/2 w-full md:h-full h-1/2 rounded-b-2xl md:rounded-b-none md:rounded-tr-2xl'/>
                 </div>
@@ -33,7 +33,7 @@ const Education = () => {
                         <h1 className='md:uppercase'>● Preparatory Class In Sciences And Technologies</h1>
                         <p className='px-2'>09/2015 – 06/2017: National School Of Public Works, Algeria</p>
                         <p>● Main courses :</p>
-                        <p className='px-3'>Algebra, Mathematical Analysis ,Physics , Chemistry, Rational Mechanics, Computer Science, Statistics, Probalities...</p>
+                        <p className='px-3'>Algebra, Mathematical Analysis ,Physics , Chemistry, Rational Mechanics, Computer Science, Statistics, Probalities.</p>
                     </span>
                 </div>
                 <div className='reveal md:flex md:justify-start items-center h-1/4 bg-slate-800 rounded-2xl md:rounded-none shadow-xl md:shadow-none md:border-b md:border-white'>
@@ -41,7 +41,7 @@ const Education = () => {
                         <h1 className='sm:uppercase'>● Scientific Computing with Python</h1>
                         <p className='px-2'>09/2022 – 10/2022: Freecodecamp.org</p>
                         <p>● Chapters :</p>
-                        <p className='px-3'>Python Functions,Loops and Iterations,Python Lists,Python Dictionaries,Using Web Services,Python Objects,Relational Databases</p>
+                        <p className='px-3'>Python Functions, Loops and Iterations, Python Lists, Python Dictionaries, Using Web Services, Python Objects, Relational Databases</p>
                         <a href='https://www.freecodecamp.org/certification/lokmaneghedied/scientific-computing-with-python-v7' target='_blanck' className='place-self-end'>
                             <button className='certificationBtn'>
                                 <p>Certification</p>

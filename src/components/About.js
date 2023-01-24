@@ -22,7 +22,7 @@ const About = () => {
                         <span className='text-white sm:text-xl tracking-wider pb-2'>. . . . . . . . .</span>
                     </div>
                 </div>
-                <p className='reveal text-white xl:text-lg lg:text-sm md:text-base text-sm'>With a State Engineer In Mining Engineering, obtained with honors from the National school of mines and metallurgy in Algeria, I also have a significant background in software development, basically self taught using sources like : FreeCodeCamp, W3School, Youtube & Official documentation.<br />
+                <p className='reveal text-white xl:text-lg lg:text-sm md:text-base text-sm'>With a State Engineer In Mining Engineering, obtained with honors from the National school of mining and metallurgy in Algeria, I also have a significant background in software development, basically self taught using sources like : FreeCodeCamp, W3School, Youtube & Official documentation.<br />
                 In addition to the technical background, my soft skills are well enhanced, for I was an active student in my college years which helped me build a strong personality and respectable leadership abilities.
                 </p>
                 <a href='#education' className='place-self-end'>

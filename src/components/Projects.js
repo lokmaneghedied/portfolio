@@ -28,7 +28,7 @@ const Projects = () => {
                         <p>-Vue.js & Flask with a relational database <small>(SQLAlchemy)</small>.</p>
                         <p>-Vue.js & Flask with a non-relational database <small>(MongoDB)</small>.</p>
                         <p>-React.js & Flask with a non-relational database <small>(MongoDB)</small>.</p>
-                        <a href='https://' target='_blanck' className='place-self-end'>
+                        <a href='https://github.com/lokmaneghedied' target='_blanck' className='place-self-end'>
                             <button className='projectBtn'>
                                 <p>Link to project</p>
                                 <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" className="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +49,7 @@ const Projects = () => {
                         <p>● Probability Calculator.</p>
                         <a href='https://github.com/lokmaneghedied/Python-s-projects' target='_blanck' className='place-self-end'>
                             <button className='projectBtn'>
-                                <p>Link to project</p>
+                                <p>Link to projects</p>
                                 <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" className="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
                                 </svg>
@@ -68,7 +68,7 @@ const Projects = () => {
                         <p>● Cash Register.</p>
                         <a href='https://github.com/lokmaneghedied/JavaScript-s-projects' target='_blanck' className='place-self-end'>
                             <button className='projectBtn'>
-                                <p>Link to project</p>
+                                <p>Link to projects</p>
                                 <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" className="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
                                 </svg>
