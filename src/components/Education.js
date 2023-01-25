@@ -37,11 +37,14 @@ const Education = () => {
                     </span>
                 </div>
                 <div className='reveal md:flex md:justify-start items-center h-1/4 bg-slate-800 rounded-2xl md:rounded-none shadow-xl md:shadow-none md:border-b md:border-white'>
-                    <span className='grid justify-items-start content-center p-2 md:w-1/2 w-full md:h-full h-1/2 text-white space-y-2 '>
+                    <span className='grid justify-items-start content-center p-2 md:w-1/2 w-full md:h-full h-1/2 text-white'>
                         <h1 className='sm:uppercase'>● Scientific Computing with Python</h1>
-                        <p className='px-2'>09/2022 – 10/2022: Freecodecamp.org</p>
-                        <p>● Chapters :</p>
-                        <p className='px-3'>Python Functions, Loops and Iterations, Python Lists, Python Dictionaries, Using Web Services, Python Objects, Relational Databases</p>
+                        <p className='pb-2'>09/2022 – 10/2022: Freecodecamp.org</p>
+                        <p>● Chapters:</p>
+                        <p className='pl-1'>- Different data structures</p>
+                        <p className='pl-1'>- Common python libraries: numpy ,pandas...</p>
+                        <p className='pl-1'>- Functional programming</p>
+                        <p className='pl-1'>- Object oriented programming</p>
                         <a href='https://www.freecodecamp.org/certification/lokmaneghedied/scientific-computing-with-python-v7' target='_blanck' className='place-self-end'>
                             <button className='certificationBtn'>
                                 <p>Certification</p>
@@ -55,9 +58,9 @@ const Education = () => {
                 </div>
                 <div className='reveal md:flex md:justify-start items-center h-1/4 bg-slate-800 rounded-2xl md:rounded-t-none shadow-xl md:shadow-none '>
                     <img src={js} alt="" className='md:w-1/2 w-full md:h-full h-1/2 rounded-t-2xl md:rounded-t-none lg:rounded-bl-2xl'/>
-                    <span className='grid justify-items-start content-center p-2 md:w-1/2 w-full md:h-full h-1/2 text-white space-y-2 '>
+                    <span className='grid justify-items-start content-center p-2 md:w-1/2 w-full md:h-full h-1/2 text-white'>
                         <h1 className='sm:uppercase'>● JavaScript Algorithms and Data Structures</h1>
-                        <p className='px-2'>10/2022 – 11/2022: Freecodecamp.org</p>
+                        <p className='pb-2'>10/2022 – 11/2022: Freecodecamp.org</p>
                         <p>● Chapters :</p>
                         <p className='px-3'>Basic JavaScript, ES6, Debugging, Basic Data Structures, Basic Algorithm Scripting, Object Oriented Programming, Functional Programming, Intermediate Algorithm Scripting</p>
                         <a href='https://www.freecodecamp.org/certification/lokmaneghedied/javascript-algorithms-and-data-structures' target='_blanck' className='place-self-end'>

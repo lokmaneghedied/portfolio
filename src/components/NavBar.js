@@ -13,12 +13,12 @@ const NavBar = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
                     </svg>
                 </button>
-                {toggleNavBar && <nav id="nav" className='flex items-center text-red-500 sm:font-extrabold'>
-                    <a href="#home" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-white underline decoration-dashed underline-offset-4 sm:uppercase'> Home</a>
-                    <a href="#about" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-white underline decoration-dashed underline-offset-4 sm:uppercase'> About</a>
-                    <a href="#skills" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-white underline decoration-dashed underline-offset-4 sm:uppercase'> Skills</a>
-                    <a href="#projects" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-white underline decoration-dashed underline-offset-4 sm:uppercase'> Projects</a>
-                    <a href="#contact" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-white underline decoration-dashed underline-offset-4 sm:uppercase'> Contact</a>
+                {toggleNavBar && <nav id="nav" className='flex items-center text-red-500 md:font-extrabold'>
+                    <a href="#home" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-white underline decoration-dashed underline-offset-4 sm:uppercase md:text-sm lg:text-base xl:text-lg'> Home</a>
+                    <a href="#about" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-white underline decoration-dashed underline-offset-4 sm:uppercase md:text-sm lg:text-base xl:text-lg'> About</a>
+                    <a href="#skills" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-white underline decoration-dashed underline-offset-4 sm:uppercase md:text-sm lg:text-base xl:text-lg'> Skills</a>
+                    <a href="#projects" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-white underline decoration-dashed underline-offset-4 sm:uppercase md:text-sm lg:text-base xl:text-lg'> Projects</a>
+                    <a href="#contact" className='sm:p-2 sm:hover:scale-110 p-0.5 text-xs m-1 hover:text-white underline decoration-dashed underline-offset-4 sm:uppercase md:text-sm lg:text-base xl:text-lg'> Contact</a>
                 </nav>}
         </div>
      );

@@ -4,7 +4,7 @@ import jsPr from '../images/jsPr.jpg'
 
 const Projects = () => {
     return ( 
-        <div id='projects' className="h-full pt-6 space-y-4">
+        <div id='projects' className="h-full pt-6 space-y-6">
             <div className='grid justify-items-center content-center h-1/6 '>
                 <h1 className='text-2xl tracking-wider font-extrabold animate-pulse '>
                     <span className="md:uppercase">Recent </span>
@@ -18,12 +18,15 @@ const Projects = () => {
                     <span className='text-xl tracking-wider'>. . . . . . . .</span>
                 </div>
             </div>
-            <div className="grid justify-items-center content-center space-y-1 h-4/5 ">
+            <div className="grid justify-items-center content-center  h-4/5 ">
                 <div className='reveal lg:flex lg:justify-center lg:items-center lg:h-72 xl:w-10/12 w-11/12 grid justify-items-center h-full'>
-                    <div className='grid content-center bg-blue-100 p-2 m-1 rounded-xl shadow-inner lg:h-5/6 w-full h-fit'>
-                        <h1 className='p-1 font-bold text-lg'>MySpace</h1>
-                        <p>● Full stack web application: where the user can create new post & edit,delete the post and add a comment.</p>
-                        <p>● languages: Python & JavaScript</p>
+                    <div className='grid content-center bg-slate-800 text-white p-2 m-1 rounded-xl shadow-inner w-full h-fit'>
+                        <h1 className='p-1 font-bold text-lg text-red-500'>MySpace</h1>
+                        <p>● Full stack web application that handles all CRUD operations on user generated post, with extra fonctionality of likes and comments.</p>
+                        <p>● Stacks used:</p>
+                        <p>- Flask for the API</p>
+                        <p>- Vue.js, React.js for UI</p>
+                        <p>- MongoDB, SQLAlchemy for database</p>
                         <p>● Comes in three versions:</p>
                         <p>-Vue.js & Flask with a relational database <small>(SQLAlchemy)</small>.</p>
                         <p>-Vue.js & Flask with a non-relational database <small>(MongoDB)</small>.</p>
@@ -40,8 +43,8 @@ const Projects = () => {
                     <img src={projectImg} alt="" className='lg:h-full h-fit' />
                 </div>
                 <div className='reveal lg:flex lg:justify-center lg:items-center lg:h-72 xl:w-10/12 w-11/12 grid justify-items-center h-full'>
-                    <div className='grid content-center bg-blue-100 p-2 m-1 rounded-xl shadow-inner lg:h-5/6 w-full h-fit'>
-                        <h1 className='p-1 font-bold text-lg'>Python's Projects</h1>
+                    <div className='grid content-center bg-slate-800 text-white p-2 m-1 rounded-xl shadow-inner lg:h-5/6 w-full h-fit'>
+                        <h1 className='p-1 font-bold text-lg text-red-500'>Python's Projects</h1>
                         <p>● Arithmetic Formatter.</p>
                         <p>● Time Calculator.</p>
                         <p>● Budget App.</p>
@@ -59,8 +62,8 @@ const Projects = () => {
                     <img src={pyPr} alt="" className='lg:h-full h-fit' />
                 </div>
                 <div className='reveal lg:flex lg:justify-center lg:items-center lg:h-72 xl:w-10/12 w-11/12 grid justify-items-center h-full'>
-                    <div className='grid content-center bg-blue-100 p-2 m-1 rounded-xl shadow-inner lg:h-5/6 w-full h-fit'>
-                        <h1 className='p-1 font-bold text-lg'>javaScript's Projects</h1>
+                    <div className='grid content-center bg-slate-800 text-white p-2 m-1 rounded-xl shadow-inner lg:h-5/6 w-full h-fit'>
+                        <h1 className='p-1 font-bold text-lg text-red-500'>javaScript's Projects</h1>
                         <p>● Palindrome Checker.</p>
                         <p>● Roman Numeral Converter.</p>
                         <p>● Caesars Cipher.</p>

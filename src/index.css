@@ -111,8 +111,8 @@
 }
  
 .certificationBtn {
-   --primary-color: #00ff00;
-   --hovered-color: #00ff00;
+  --primary-color: #ff3d3d;
+  --hovered-color: #ff3d3d
    position: relative;
    display: flex;
    font-weight: 600;
@@ -124,7 +124,7 @@
 .certificationBtn p {
   margin: 0;
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--primary-color)
 }
 
@@ -149,7 +149,7 @@
 
 .certificationBtn:hover svg {
   transform: translateX(4px);
-  color: var(--hovered-color)
+  color: #ff3d3d;
 }
 
 .certificationBtn svg {
@@ -161,15 +161,15 @@
 }
 
 .moreBtn {
-  padding: 0;
+  padding: 10px;
   margin: 0;
   border: none;
   background: none;
 }
 
 .moreBtn {
-  --primary-color: #ffe100;
-  --hovered-color: #ffe100;
+  --primary-color: #ff3d3d;
+  --hovered-color: #ff3d3d;
   position: relative;
   display: flex;
   font-weight: 600;
@@ -193,7 +193,7 @@
 }
 
 .moreBtn:hover svg {
- transform: translateX(4px);
+ transform: translateX(5px);
  color: var(--hovered-color)
 }
 
@@ -214,8 +214,8 @@
 }
 
 .projectBtn {
-  --primary-color: #00000a;
-  --hovered-color: #00000a;
+  --primary-color: #ff3d3d;
+  --hovered-color: #ff3d3d;
   position: relative;
   display: flex;
   font-weight: 600;
@@ -261,4 +261,21 @@
  position: relative;
  width: 15px;
  transition-delay: 0.2s;
+}
+
+
+.skillsContainer:hover .skillscard {
+  filter: blur(3px);
+  opacity: .5;
+  transform: scale(.98);
+  box-shadow: none;
+}
+
+.skillsContainer:hover .skillscard:hover {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+  background: #A82C2C;
+  color: white;
 }

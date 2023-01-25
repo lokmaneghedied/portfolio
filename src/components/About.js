@@ -4,14 +4,14 @@ import webDev from '../images/webDev.png'
 // import db from '../images/db.jpg'
 
 const About = () => {
-    return ( 
-        <div id='about' className="grid justify-items-center content-start h-full space-y-4 md:space-y-2 xl:space-y-4 bg-gradient-to-t from-red-700 to-red-500 rounded-b-3xl">
+    return (
+        <div id='about' className="grid justify-items-center content-start h-full space-y-4 md:space-y-2 xl:space-y-4 bg-gradient-to-t from-slate-800 to-slate-700 rounded-b-3xl">
             <img src={webDev} alt=""/>
             <div className='grid content-center w-4/5 tracking-wider sm:space-y-2'>
                 <div className='grid content-center justify-items-center'>
                     <h1 className='text-white sm:text-2xl tracking-wider font-extrabold'>
                         <span>A LITTLE </span>
-                        <span className='text-yellow-300 animate-pulse'>ABOUT </span>
+                        <span className='text-red-500 animate-pulse'>ABOUT </span>
                         <span>ME</span>
                     </h1>
                     <div className='flex items-stretch space-x-4'>
@@ -22,7 +22,7 @@ const About = () => {
                         <span className='text-white sm:text-xl tracking-wider pb-2'>. . . . . . . . .</span>
                     </div>
                 </div>
-                <p className='reveal text-white xl:text-lg lg:text-sm md:text-base text-sm'>With a State Engineer In Mining Engineering, obtained with honors from the National school of mining and metallurgy in Algeria, I also have a significant background in software development, basically self taught using sources like : FreeCodeCamp, W3School, Youtube & Official documentation.<br />
+                <p className='reveal text-white xl:text-lg lg:text-sm md:text-base text-sm'>With a State Engineer In Mining Engineering, obtained with honors from the National school of mining and metallurgy in Algeria, I also have a significant background in software development, basically self taught using sources like : FreeCodeCamp, W3School, Youtube & Official documentation, and under the guidance of a senior software engineer. <br />
                 In addition to the technical background, my soft skills are well enhanced, for I was an active student in my college years which helped me build a strong personality and respectable leadership abilities.
                 </p>
                 <a href='#education' className='place-self-end'>

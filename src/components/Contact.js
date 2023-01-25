@@ -1,4 +1,3 @@
-import linkedin from '../images/linkedin.png'
 import gmail from '../images/gmail.png'
 import maps from '../images/maps.png'
 import phone from '../images/phone.png'
@@ -19,8 +18,8 @@ const Contact = () => {
                     <span className='text-xl tracking-wider'>. . . . . . . .</span>
                 </div>
             </div>
-            <div className="lg:flex lg:justify-around lg:items-center lg:h-96 grid justify-items-center md:grid-rows-2 md:grid-cols-2 md:gap-2 h-full md:space-y-0 space-y-4">
-                <div className="reveal card bg-slate-800 md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-2">
+            <div className="md:flex md:justify-around md:items-center md:h-96 grid justify-items-center h-full md:space-x-2 md:space-y-0 space-y-4">
+                <div className="reveal card bg-slate-800 ">
                     <div className="icon">
                     <img src={phone} alt="" />
                     </div>
@@ -29,7 +28,7 @@ const Contact = () => {
                         <p className='font-sans'>+213 672 13 26 33</p>
                     </div>
                 </div>
-                <div className="reveal card bg-slate-800 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2">
+                <div className="reveal card bg-slate-800 ">
                     <div className="icon">
                     <img src={gmail} alt="" />
                     </div>
@@ -38,22 +37,13 @@ const Contact = () => {
                         <p>lokmane.ghedied@gmail.com</p>
                     </div>
                 </div>
-                <div className="reveal card bg-slate-800 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3">
+                <div className="reveal card bg-slate-800 ">
                     <div className="icon">
                         <img src={maps} alt="" />
                     </div>
                     <div className="content">
                         <h3>I live in:</h3>
                         <p>Jijel/Algeria</p>
-                    </div>
-                </div>
-                <div className="reveal card bg-slate-800 md:col-start-2 md:col-end-3 md:row-start-2 md:row-end-3">
-                    <div className="icon">
-                    <img src={linkedin} alt="" />
-                    </div>
-                    <div className="content">
-                        <h3>LinkedIn:</h3>
-                        <p>lokmane-ghedied</p>
                     </div>
                 </div>
             </div>
