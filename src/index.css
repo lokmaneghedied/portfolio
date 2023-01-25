@@ -184,18 +184,6 @@
  font-size: 16px;
  color: var(--primary-color)
 }
-
-.moreBtn::after {
- position: absolute;
- content: "";
- width: 0;
- left: 0;
- bottom: -7px;
- background: var(--hovered-color);
- height: 2px;
- transition: 0.3s ease-out;
-}
-
 .moreBtn:hover::after {
  width: 100%;
 }
