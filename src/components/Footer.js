@@ -16,7 +16,7 @@ const Footer = () => {
                 <a href="https://www.facebook.com/lokmane.ghedied" target='_blanck' className='h-10 w-10 hover:scale-95'>
                     <img src={fb} alt=""/>
                 </a>
-                <a href="https://call.whatsapp.com/voice/hRR4tHw3q9A8UZkeUsiJYP" target='_blanck' className='h-10 w-10 hover:scale-95'>
+                <a href="https://wa.me/qr/OAEK2373L7XIH1" target='_blanck' className='h-10 w-10 hover:scale-95'>
                     <img src={whatsapp} alt=""/>
                 </a>
             </div>
