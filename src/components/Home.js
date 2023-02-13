@@ -1,4 +1,4 @@
-import photo from '../images/photo.jpg'
+import photo from '../images/photo.JPG'
 const Home = () => {
     return ( 
         <div id="home" className="md:h-screen h-full w-screen flex justify-start items-center">

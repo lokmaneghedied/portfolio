@@ -2,10 +2,10 @@ import { useState } from "react";
 
 const NavBar = () => {
     const [toggleNavBar, setToggleNavBar] = useState(false)
-    const toggle = "flex justify-between items-center bg-slate-800 h-20 w-full shadow-md";
+    const toggle = "flex justify-between items-center bg-slate-800 md:h-20 w-full shadow-md";
     const intoggle = "flex justify-start ";
-    const btn = 'w-10 h-10 cursor-pointer animate-bounce ' ;
-    const rotateBtn = 'w-10 h-10 cursor-pointer hover:scale-125 rotate-180 ';
+    const btn = 'md:w-10 md:h-10 w-8 h-8 cursor-pointer animate-bounce ' ;
+    const rotateBtn = 'md:w-10 md:h-10 w-8 h-8 cursor-pointer hover:scale-125 rotate-180 ';
     return ( 
         <div className={toggleNavBar ? toggle : intoggle}>
                 <button onClick={()=>setToggleNavBar(!toggleNavBar)} className="p-2 m-2 bg-white shadow-md rounded-xl">
