@@ -1,0 +1,70 @@
+/* Tailwind_config */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* googleFonts + scrolling */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {    
+    font-family: 'Playfair Display', serif;;
+}
+
+.btn {
+    background: linear-gradient(
+      92.23deg,
+      #ff56f6 21.43%,
+      #b936ee 50.63%,
+      #3bace2 100%,
+      #406aff 117.04%
+    );
+    box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  }
+  
+  .btn:hover {
+    background: linear-gradient(
+      92.23deg,
+      #406aff 21.43%,
+      #3bace2 50.63%,
+      #b936ee 100%,
+      #ff56f6 117.04%
+    );
+}
+  
+.gradient,
+.active {
+    background: linear-gradient(
+      92.23deg,
+      #406aff 21.43%,
+      #3bace2 50.63%,
+      #b936ee 100%,
+      #ff56f6 117.04%
+    );
+}
+  
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+  
+.logo{
+  background: radial-gradient(80% 70% at 88% 50%, #42A6E3 0.89%, #42A6E3 17.23%, #42A6E3 42.04%, #FF56F6 55.12%, #FF56F6 71.54%, #FF56F6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.text_gradient {
+  @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold hover:from-[#FF56F6] hover:to-[#42A6E3];
+}
+
+.education_card:hover{
+  background:-moz-linear-gradient(28deg, rgba(184, 9, 195, 1) 0%, rgba(94, 4, 100, 1) 51%, rgba(17, 8, 83, 1) 100%); 
+  background:-webkit-linear-gradient(28deg, rgba(184, 9, 195, 1) 0%, rgba(94, 4, 100, 1) 51%, rgba(17, 8, 83, 1) 100%);
+  background:-o-linear-gradient(28deg, rgba(184, 9, 195, 1) 0%, rgba(94, 4, 100, 1) 51%, rgba(17, 8, 83, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B809C3', endColorstr='#110853', GradientType=1 );
+  background:-ms-linear-gradient(28deg, rgba(184, 9, 195, 1) 0%, rgba(94, 4, 100, 1) 51%, rgba(17, 8, 83, 1) 100%);
+  background:linear-gradient(28deg, rgba(184, 9, 195, 1) 0%, rgba(94, 4, 100, 1) 51%, rgba(17, 8, 83, 1) 100%);
+}
