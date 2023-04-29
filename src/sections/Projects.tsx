@@ -7,18 +7,31 @@ import gericht from '../assets/gericht.jpg';
 //icons
 import { TbWorldWww } from "react-icons/tb";
 import { BsGithub } from "react-icons/bs";
-
+//motion
+import { motion } from "framer-motion";
+// fadeIn
+import { fadeIn } from '../constants';
 
 const Projects = () => {
     return ( 
         <section id="projects" className="lg:h-full w-full flex flex-col items-center justify-center space-y-4 pt-8 lg:pt-0 lg:grid lg:justify-items-center lg:content-center lg:grid-cols-2 gap-8">
             {/* TITLE + DESCRIPTION */}
-            <div className="w-[90%] h-1/5 lg:h-auto">
+            <motion.div 
+                variants={fadeIn('right',0.3)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{once : false, amount: 0.7}} 
+                className="w-[90%] h-1/5 lg:h-auto">
                 <h1 className={styles.title}>MY LATEST PROJECTS:</h1>
                 <p className={styles.paragraph}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odio sapiente recusandae magni a beatae, magnam rerum placeat id deserunt quia exercitationem, similique numquam minus voluptatum odit tempore ducimus. Totam!</p>
-            </div>
+            </motion.div>
             {/* GPT3 */}
-            <div className="w-[90%] h-1/5 lg:h-full group relative overflow-hidden border-2 border-white/50 rounded-xl">
+            <motion.div 
+                variants={fadeIn('left',0.3)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{once : false, amount: 0.7}} 
+                className="w-[90%] h-1/5 lg:h-full group relative overflow-hidden border-2 border-white/50 rounded-xl">
                 <div className="group-hover:bg-black/50 w-full h-full absolute z-40 transition-all duration-500"></div>
                 <img className="group-hover:scale-125 transition-all duration-500 h-full" src={gpt3} alt="GPT-3" />
                 {/* links */}
@@ -33,9 +46,14 @@ const Projects = () => {
                         <BsGithub />
                     </a>
                 </span>
-            </div>
+            </motion.div>
             {/* HooBank */}
-            <div className="w-[90%] h-1/5 lg:h-full group relative overflow-hidden border-2 border-white/50 rounded-xl">
+            <motion.div
+                variants={fadeIn('right',0.3)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{once : false, amount: 0.7}}  
+                className="w-[90%] h-1/5 lg:h-full group relative overflow-hidden border-2 border-white/50 rounded-xl">
                 <div className="group-hover:bg-black/50 w-full h-full absolute z-40 transition-all duration-500"></div>
                 <img className="group-hover:scale-125 transition-all duration-500 h-full" src={hoobank} alt="HooBank" />
                 {/* links */}
@@ -50,9 +68,14 @@ const Projects = () => {
                         <BsGithub />
                     </a>
                 </span>
-            </div>
+            </motion.div>
             {/* GERICHT */}
-            <div className="w-[90%] h-1/5 lg:h-full group relative overflow-hidden border-2 border-white/50 rounded-xl">
+            <motion.div 
+                variants={fadeIn('left',0.3)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{once : false, amount: 0.7}} 
+                className="w-[90%] h-1/5 lg:h-full group relative overflow-hidden border-2 border-white/50 rounded-xl">
                 <div className="group-hover:bg-black/50 w-full h-full absolute z-40 transition-all duration-500"></div>
                 <img className="group-hover:scale-125 transition-all duration-500 h-full" src={gericht} alt="GERICHT" />
                 {/* links */}
@@ -67,7 +90,7 @@ const Projects = () => {
                         <BsGithub />
                     </a>
                 </span>
-            </div>
+            </motion.div>
             
         </section>
      );

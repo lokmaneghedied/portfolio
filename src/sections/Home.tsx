@@ -15,8 +15,29 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 // fadeIn
 import { fadeIn } from '../constants';
+//constants
+import { resume } from '../constants'
 
 const Home = () => {
+
+    const downloadResume = () => {
+        var pdfDataUri = "data:application/pdf;base64," + resume;
+        var link = document.createElement("a");
+        link.download = "ResumeLokmaneGHEDIED.pdf";
+        link.href = pdfDataUri;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+
+    const sendMail= () => {
+      if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+        window.open("mailto:lokmane.ghedied@gmail.com")
+      } else {
+        window.open("https://mail.google.com/mail/?view=cm&to=lokmane.ghedied@gmail.com");
+      }
+    }
+
     return ( 
         <section id='home' className="h-screen w-full flex flex-col justify-start ">            
             {/* MAIN-DIV */}
@@ -71,7 +92,7 @@ const Home = () => {
                             viewport={{once : false, amount: 0.3}} 
                             className={styles.gradient_btn}>
                             <BsSend />
-                            <button>Contact Me</button>
+                            <button onClick={sendMail}>Contact Me</button>
                         </motion.span>
                         <motion.span
                             variants={fadeIn('down',0.4)}
@@ -79,7 +100,7 @@ const Home = () => {
                             whileInView={'show'}
                             viewport={{once : false, amount: 0.3}}  
                             className={styles.gradient__text}>
-                            <button >My Resume</button>
+                            <button onClick={downloadResume}>My Resume</button>
                         </motion.span>
                     </span>
                     {/* LINKS */}
