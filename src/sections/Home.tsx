@@ -78,7 +78,7 @@ const Home = () => {
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{once : false, amount: 0.3}}  
-                            className='text_gradient flex items-center rounded-full py-2 px-3 font-bold'>
+                            className={styles.gradient__text}>
                             <button >My Resume</button>
                         </motion.span>
                     </span>

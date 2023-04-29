@@ -24,7 +24,7 @@ export const educations = [
     id:1,
     title: 'JAVASCRIPT ALGORITHMS AND DATA STRUCTURES',
     date : '10/2022 – 11/2022: Freecodecamp.org',
-    chapters : 'Basic JavaScript, ES6, Debugging, Basic Data Structures, Basic Algorithm Scripting, Object Oriented Programming, Functional Programming, Intermediate Algorithm Scripting.',
+    chapters : 'ES6, Debugging, Basic Data Structures, Object Oriented Programming, Functional Programming.',
     certificate : 'https://www.freecodecamp.org/certification/lokmaneghedied/javascript-algorithms-and-data-structures'
   },
   {
