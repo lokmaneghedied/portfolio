@@ -15,9 +15,9 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 
 const Education = () => {
     return ( 
-        <section id='experience' className="h-[700px] md:h-[800px] lg:h-screen w-full flex flex-col justify-start items-center lg:grid lg:content-center lg:justify-items-center lg:grid-cols-2 relative lg:p-8">
+        <section id='experience' className="h-[700px] md:h-[800px] lg:h-screen w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around ">
                 {/* DESCRIPTION */}
-                <div className="w-11/12 lg:w-full h-[70%] xxs:h-[60%] sm:h-[50%] lg:h-fit flex flex-col justify-center items-start">
+                <div className="w-11/12 lg:w-[40%] h-[70%] xxs:h-[60%] sm:h-[50%] lg:h-fit flex flex-col justify-center items-start lg:space-y-2">
                     <motion.h1 
                         variants={fadeIn('right',0.3)}
                         initial='hidden'
@@ -76,14 +76,14 @@ const Education = () => {
                         variants={fadeIn('right',0.5)}
                         initial='hidden'
                         whileInView={'show'}
-                        className={`lg:hidden ${styles.paragraph}`}>- Lastly, I created a settings tab where the admin can edit personal information like name, password, and phone number. The dashboard was intuitive and user-friendly and allow for easy management of users and admins.
+                        className={styles.paragraph}>- Lastly, I created a settings tab where the admin can edit personal information like name, password, and phone number. The dashboard was intuitive and user-friendly and allow for easy management of users and admins.
                         </motion.p>
                     {/* See_More */}
                     <motion.span
                         variants={fadeIn('right',0.6)}
                         initial='hidden'
                         whileInView={'show'} 
-                        className='flex space-x-4 self-end z-50 w-full lg:hidden pt-2'>
+                        className='flex space-x-4 self-end z-50 w-full pt-2'>
                         <p className={styles.gradient__text}>My Latest projects </p>
                         <Link 
                             to="projects" 
@@ -96,12 +96,12 @@ const Education = () => {
                     </motion.span>
                 </div>
                 {/* CARDS */}
-                <div className=" w-[80%] sm:w-[70%] lg:w-[80%] h-[30%] xxs:h-[300px] sm:h-[450px] lg:h-full xl:w-[60%] object-contain relative lg:grid ">
+                <div className="w-[80%] sm:w-[70%] lg:w-[40%] h-[30%] xxs:h-[300px] sm:h-[450px] lg:h-full xl:w-[60%] object-contain relative ">
                     <motion.div
                         variants={fadeIn('left',0.3)}
                         initial='hidden'
                         whileInView={'show'}
-                        className="cards w-full left-0 bottom-0 absolute md:hidden lg:block">
+                        className="cards w-full left-0 bottom-0 lg:bottom-1/4 absolute md:hidden lg:block">
                         <div className="card one ">
                         <img src={spinet3} alt="spinet" />
                         </div>
@@ -125,28 +125,6 @@ const Education = () => {
                         </div>
                     </div>
                 </div>
-                <motion.p 
-                        variants={fadeIn('right',0.5)}
-                        initial='hidden'
-                        whileInView={'show'}
-                        className={`hidden lg:block lg:col-span-2 ${styles.paragraph}`}>- Lastly, I created a settings tab where the admin can edit personal information like name, password, and phone number. The dashboard was intuitive and user-friendly and allow for easy management of users and admins.
-                </motion.p>
-                {/* See_More */}
-                <motion.span 
-                    variants={fadeIn('right',0.6)}
-                    initial='hidden'
-                    whileInView={'show'}
-                    className='lg:flex space-x-4 self-end pt-4 z-50 w-full hidden '>
-                    <p className={styles.gradient__text}>My Latest projects </p>
-                    <Link 
-                        to="projects" 
-                        smooth={true}
-                        className='cursor-pointer w-[30px] h-[30px] flex justify-center items-center btn rounded-full'>
-                        <span className="animate-bounce">
-                            <AiOutlineArrowDown />
-                        </span>
-                    </Link>
-                </motion.span>
         </section>
      );
 }
