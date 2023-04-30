@@ -36,8 +36,12 @@ const Education = () => {
                             <div className="lg:hidden z-20">
                                 <CircleIcon />
                             </div>
-                            <span 
-                                className={isEven(education.id) ? 'w-10/12 lg:h-[190px] lg:grid content-center lg:space-y-2 lg:col-start-2 education_card px-4 py-2 rounded-3xl cursor-pointer lg:place-self-end' : 'w-10/12 lg:h-[190px] lg:grid content-center lg:space-y-2 lg:col-start-1 education_card px-4 py-2 rounded-3xl cursor-pointer '}>
+                            <motion.span
+                                variants={fadeIn('left',0.1)}
+                                initial='hidden'
+                                whileInView={'show'}
+                                viewport={{once : false, amount: 0.1}}
+                                className={isEven(education.id) ? 'border-2 border-white/50 w-10/12 lg:h-[190px] lg:grid content-center lg:space-y-2 lg:col-start-2 education_card px-4 py-2 rounded-3xl cursor-pointer lg:place-self-end' : 'border-2 border-white/50 w-10/12 lg:h-[190px] lg:grid content-center lg:space-y-2 lg:col-start-1 education_card px-4 py-2 rounded-3xl cursor-pointer '}>
                                 <motion.h1 
                                     variants={fadeIn('left',0.3)}
                                     initial='hidden'
@@ -71,7 +75,7 @@ const Education = () => {
                                         <FiExternalLink />
                                     </span>
                                 </motion.a>}
-                            </span>
+                            </motion.span>
                     </ul>
                 ))}
             </div>

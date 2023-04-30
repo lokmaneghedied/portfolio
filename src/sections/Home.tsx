@@ -1,5 +1,3 @@
-// components
-import HireMe from '../components/HireMe';
 // styles
 import { styles } from '../style';
 // assets
@@ -145,16 +143,6 @@ const Home = () => {
                     <img src={image} alt="" />
                 </motion.div>
             </div>
-            {/* HIRE_ME */}
-            <motion.div 
-                variants={fadeIn('up',0.2)}
-                initial='hidden'
-
-                whileInView={'show'}
-                viewport={{once : false, amount: 0.7}} 
-                className='hidden lg:block absolute lg:top-11 lg:right-8'>
-                <HireMe/>
-            </motion.div>
         </section>
      );
 }

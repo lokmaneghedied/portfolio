@@ -15,7 +15,7 @@ export default {
     },
     extend: {
       animation: {
-        'spin-slow': 'spin 8s linear infinite',
+        'spin-slow': 'spin 10s linear infinite',
       },
       colors: {
         primary: '#0a0a0a',
