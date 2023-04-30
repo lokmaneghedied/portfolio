@@ -7,8 +7,7 @@ import {
   Experience,
   Projects,
   Skills,
-  Contact,
-  Footer 
+  Contact, 
 } from "./sections"
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
       <Projects />
       <Skills />
       <Contact />
-      <Footer />
     </div>
   )
 }

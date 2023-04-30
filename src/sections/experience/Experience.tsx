@@ -88,15 +88,15 @@ const Education = () => {
                         <Link 
                             to="projects" 
                             smooth={true}
-                            className='cursor-pointer w-[25px] h-[25px] flex justify-center items-center btn rounded-full'>
+                            className='cursor-pointer w-[20px] h-[20px] lg:w-[25px] lg:h-[25px] flex justify-center items-center btn rounded-full'>
                             <span >
-                                <AiOutlineArrowDown />
+                                <AiOutlineArrowDown className="w-[15px] h-[15px] lg:w-auto lg:h-auto" />
                             </span>
                         </Link>
                     </motion.span>
                 </div>
                 {/* CARDS */}
-                <div className="w-[80%] sm:w-[70%] lg:w-[40%] h-[30%] xxs:h-[300px] sm:h-[450px] lg:h-full xl:w-[60%] object-contain relative ">
+                <div className="w-[80%] sm:w-[70%] lg:w-[40%] h-[30%] xxs:h-[300px] sm:h-[450px] lg:h-full object-contain relative ">
                     <motion.div
                         variants={fadeIn('left',0.3)}
                         initial='hidden'

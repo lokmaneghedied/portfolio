@@ -46,8 +46,8 @@ const About = () => {
                     <Link 
                         to="education" 
                         smooth={true}
-                        className='cursor-pointer w-[30px] h-[30px] flex justify-center items-center btn rounded-full'>
-                        <AiOutlineArrowDown />
+                        className='cursor-pointer w-[20px] h-[20px] lg:w-[30px] lg:h-[30px] flex justify-center items-center btn rounded-full'>
+                        <AiOutlineArrowDown className='w-[15px] h-[15px] lg:w-auto lg:h-auto' />
                     </Link>
                 </span>
                 

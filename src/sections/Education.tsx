@@ -33,7 +33,7 @@ const Education = () => {
                         ref={ref}  
                         className="relative px-4 py-2 lg:px-0 lg:py-0 flex justify-start space-x-4 lg:space-x-0 lg:grid lg:grid-cols-2 lg:gap-0 " 
                         key={education.id}>
-                            <div className="lg:hidden z-20">
+                            <div className="lg:hidden z-20 translate-y-2">
                                 <CircleIcon />
                             </div>
                             <motion.span
@@ -71,8 +71,8 @@ const Education = () => {
                                     viewport={{once : false, amount: 0.7}} 
                                     className="place-self-end flex items-center space-x-2 hover:underline decoration-blue-700 underline-offset-4 " href={education.certificate} target="_blank" >
                                     <p className={styles.gradient__text}>See Certificate !</p>
-                                    <span className="w-[30px] h-[30px] flex justify-center items-center btn rounded-full">
-                                        <FiExternalLink />
+                                    <span className="mt-1 md:mt-0 w-[20px] h-[20px] lg:w-[30px] lg:h-[30px] flex justify-center items-center btn rounded-full">
+                                        <FiExternalLink className="w-[10px] h-[10px] lg:w-auto lg:h-auto"/>
                                     </span>
                                 </motion.a>}
                             </motion.span>
