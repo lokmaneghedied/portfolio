@@ -8,6 +8,7 @@ import {
   Projects,
   Skills,
   Contact, 
+  Footer
 } from "./sections"
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Projects />
       <Skills />
       <Contact />
+      <Footer />
     </div>
   )
 }

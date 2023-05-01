@@ -33,7 +33,7 @@ const About = () => {
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{once : false, amount: 0.7}} 
-                    className={`w-10/12 ${styles.subtitle}` }>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt officiis beatae minima consequatur molestias nobis,</motion.p>
+                    className={`w-10/12 ${styles.subtitle}` }>Skilled web developer with a passion for creating high-quality, User-friendly and Responsive webpages that deliver exceptional user experiences. </motion.p>
                 <motion.p 
                     variants={fadeIn('left',0.3)}
                     initial='hidden'
