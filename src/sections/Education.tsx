@@ -82,7 +82,7 @@ const Education = () => {
             {/* LEFT_LINE */}
             <motion.div 
                 style={{scaleY : scrollYProgress}}
-                className="absolute origin-top top-[60px] lg:top-[90px] left-[27px] lg:left-1/2 bg-accent w-[4px] h-[760px] xs:h-[600px] xxs:h-[500px] sm:h-[450px] md:h-[430px] lg:h-[620px]" />
+                className="absolute origin-top top-[60px] lg:top-[90px] left-[27px] lg:left-1/2 bg-accent w-[4px] h-[770px] xs:h-[600px] xxs:h-[500px] sm:h-[450px] md:h-[430px] lg:h-[620px]" />
             <div className="absolute hidden lg:block lg:left-1/2 lg:top-[90px] lg:-translate-x-[11px]">
                 <CircleIcon />
             </div>
