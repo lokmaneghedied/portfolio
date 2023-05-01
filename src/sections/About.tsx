@@ -41,7 +41,7 @@ const About = () => {
                     viewport={{once : false, amount: 0.7}} 
                     className={`w-10/12 ${styles.paragraph}`}>With a State Engineer In Mining Engineering, obtained with honors from the National school of mining and metallurgy in Algeria, I also have a significant background in software development, basically self taught using sources like: FreeCodeCamp, W3School, Youtube and Official documentation, and under the guidance of a senior software engineer. In addition to the technical background, my soft skills are well enhanced, for I was an active student in my college years which helped me build a strong personality and respectable leadership abilities.</motion.p>
                 <span 
-                    className='flex space-x-4 self-end pr-6 z-50'>
+                    className='flex space-x-4 self-end pr-6 z-40'>
                     <p className={styles.gradient__text}>More About Me </p>
                     <Link 
                         to="education" 

@@ -15,7 +15,7 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 
 const Education = () => {
     return ( 
-        <section id='experience' className="h-[700px] md:h-[800px] lg:h-screen w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around ">
+        <section id='experience' className="h-[700px] md:h-[800px] lg:h-screen w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around space-y-8 lg:space-y-0">
                 {/* DESCRIPTION */}
                 <div className="w-11/12 lg:w-[40%] h-[70%] xxs:h-[60%] sm:h-[50%] lg:h-fit flex flex-col justify-center items-start lg:space-y-2">
                     <motion.h1 
