@@ -64,8 +64,8 @@ const Education = () => {
                         whileInView={'show'}
                         className={styles.paragraph}>
                             - I also implemented an admins tab with functionality similar to the users' page but specifically for admins.
-                        </motion.p>
-                        <motion.p 
+                    </motion.p>
+                    <motion.p 
                         variants={fadeIn('right',0.5)}
                         initial='hidden'
                         whileInView={'show'}
@@ -83,7 +83,7 @@ const Education = () => {
                         variants={fadeIn('right',0.6)}
                         initial='hidden'
                         whileInView={'show'} 
-                        className='flex space-x-4 self-end z-50 w-full pt-2'>
+                        className='flex space-x-4 self-end z-40 w-full pt-2'>
                         <p className={styles.gradient__text}>My Latest projects </p>
                         <Link 
                             to="projects" 
