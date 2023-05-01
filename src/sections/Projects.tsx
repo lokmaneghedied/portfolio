@@ -35,14 +35,14 @@ const Projects = () => {
                 <div className="group-hover:bg-black/50 w-full h-full absolute z-40 transition-all duration-500"></div>
                 <img className="group-hover:scale-125 transition-all duration-500 h-full" src={hoobank} alt="HooBank" />
                 {/* links */}
-                <span className="absolute -bottom-full left-5 group-hover:bottom-10 transition-all duration-500">
-                    <span className='text-white text-xl lg:text-2xl font-extrabold '>HooBank </span>
+                <span className="absolute -bottom-full left-5 group-hover:bottom-10 transition-all duration-500 z-40">
+                    <span className='text_gradient text-xl lg:text-2xl font-extrabold '>HooBank </span>
                 </span>
                 <span className="flex space-x-3 absolute -bottom-full left-5 group-hover:bottom-5 transition-all duration-700">
-                    <a className="hover:scale-x-110 z-50" href="https://lokmaneghedied.github.io/HooBank/" target="_blank">
+                    <a className="hover:scale-125 z-40" href="https://lokmaneghedied.github.io/HooBank/" target="_blank">
                         <TbWorldWww />
                     </a>
-                    <a className="hover:scale-x-110 z-50" href="https://github.com/lokmaneghedied/HooBank" target="_blank">
+                    <a className="hover:scale-125 z-40" href="https://github.com/lokmaneghedied/HooBank" target="_blank">
                         <BsGithub />
                     </a>
                 </span>
@@ -57,14 +57,14 @@ const Projects = () => {
                 <div className="group-hover:bg-black/50 w-full h-full absolute z-40 transition-all duration-500"></div>
                 <img className="group-hover:scale-125 transition-all duration-500 h-full" src={gpt3} alt="GPT-3" />
                 {/* links */}
-                <span className="absolute -bottom-full left-5 group-hover:bottom-10 transition-all duration-500">
-                    <span className='text-white text-xl lg:text-2xl font-extrabold '>GPT-3 </span>
+                <span className="absolute -bottom-full z-40 left-5 group-hover:bottom-10 transition-all duration-500">
+                    <span className='text_gradient text-xl lg:text-2xl font-extrabold '>GPT-3 </span>
                 </span>
                 <span className="flex space-x-3 absolute -bottom-full left-5 group-hover:bottom-5 transition-all duration-700">
-                    <a className="hover:scale-x-110 z-50" href="https://lokmaneghedied.github.io/gpt-3/" target="_blank">
+                    <a className="hover:scale-125 z-40" href="https://lokmaneghedied.github.io/gpt-3/" target="_blank">
                         <TbWorldWww />
                     </a>
-                    <a className="hover:scale-x-110 z-50" href="https://github.com/lokmaneghedied/gpt-3" target="_blank">
+                    <a className="hover:scale-125 z-40" href="https://github.com/lokmaneghedied/gpt-3" target="_blank">
                         <BsGithub />
                     </a>
                 </span>
@@ -79,14 +79,14 @@ const Projects = () => {
                 <div className="group-hover:bg-black/50 w-full h-full absolute z-40 transition-all duration-500"></div>
                 <img className="group-hover:scale-125 transition-all duration-500 h-full" src={gericht} alt="GERICHT" />
                 {/* links */}
-                <span className="absolute -bottom-full left-5 group-hover:bottom-10 transition-all duration-500">
-                    <span className='text-white text-xl lg:text-2xl font-extrabold '>COMING SOON...  </span>
+                <span className="absolute -bottom-full z-40 left-5 group-hover:bottom-10 transition-all duration-500">
+                    <span className='text_gradient text-xl lg:text-2xl font-extrabold '>COMING SOON...  </span>
                 </span>
                 <span className="flex space-x-3 absolute -bottom-full left-5 group-hover:bottom-5 transition-all duration-700">
-                    <a className="hover:scale-x-110 z-50" href="" target="_blank">
+                    <a className="hover:scale-125 z-40" href="" target="_blank">
                         <TbWorldWww />
                     </a>
-                    <a className="hover:scale-x-110 z-50" href="" target="_blank">
+                    <a className="hover:scale-125 z-40" href="" target="_blank">
                         <BsGithub />
                     </a>
                 </span>
