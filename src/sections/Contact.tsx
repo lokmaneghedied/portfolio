@@ -38,7 +38,7 @@ const Contact = () => {
         checkEmail()
         checkMessage()
             if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-              window.open(`lokmane.ghedied@gmail.com?subject=${subject}&body=${message}`)
+              window.open(`mailto:lokmane.ghedied@gmail.com?subject=${subject}&body=${message}`)
             } else {
               window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=lokmane.ghedied@gmail.com&su=${subject}&body=${message}`);
             }

@@ -37,44 +37,28 @@ const Education = () => {
                                 <CircleIcon />
                             </div>
                             <motion.span
-                                variants={fadeIn('left',0.1)}
+                                variants={fadeIn('left',0.3)}
                                 initial='hidden'
                                 whileInView={'show'}
-                                viewport={{once : false, amount: 0.1}}
+                                viewport={{once : false, amount: 0.7}}
                                 className={isEven(education.id) ? 'border-2 border-white/50 w-10/12 lg:h-[190px] lg:grid content-center lg:space-y-2 lg:col-start-2 education_card px-4 py-2 rounded-3xl cursor-pointer lg:place-self-end' : 'border-2 border-white/50 w-10/12 lg:h-[190px] lg:grid content-center lg:space-y-2 lg:col-start-1 education_card px-4 py-2 rounded-3xl cursor-pointer '}>
-                                <motion.h1 
-                                    variants={fadeIn('left',0.3)}
-                                    initial='hidden'
-                                    whileInView={'show'}
-                                    viewport={{once : false, amount: 0.7}}
+                                <h1 
                                     className={styles.subtitle}>{education.title}
-                                </motion.h1>   
-                                <motion.p 
-                                    variants={fadeIn('left',0.4)}
-                                    initial='hidden'
-                                    whileInView={'show'}
-                                    viewport={{once : false, amount: 0.7}}
+                                </h1>   
+                                <p 
                                     className={styles.subtitle}>{education.date}
-                                </motion.p>
-                                {education.chapters && <motion.p
-                                    variants={fadeIn('left',0.5)}
-                                    initial='hidden'
-                                    whileInView={'show'}
-                                    viewport={{once : false, amount: 0.7}} 
+                                </p>
+                                {education.chapters && <p
                                     className={styles.paragraph}>{education.chapters}
-                                </motion.p>}
+                                </p>}
                                 {education.certificate && 
-                                <motion.a
-                                    variants={fadeIn('left',0.6)}
-                                    initial='hidden'
-                                    whileInView={'show'}
-                                    viewport={{once : false, amount: 0.7}} 
+                                <a
                                     className="place-self-end flex items-center space-x-2 hover:underline decoration-blue-700 underline-offset-4 " href={education.certificate} target="_blank" >
                                     <p className={styles.gradient__text}>See Certificate !</p>
                                     <span className="mt-1 md:mt-0 w-[20px] h-[20px] lg:w-[30px] lg:h-[30px] flex justify-center items-center btn rounded-full">
                                         <FiExternalLink className="w-[10px] h-[10px] lg:w-auto lg:h-auto"/>
                                     </span>
-                                </motion.a>}
+                                </a>}
                             </motion.span>
                     </ul>
                 ))}
