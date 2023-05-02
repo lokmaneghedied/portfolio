@@ -39,10 +39,10 @@ const Projects = () => {
                     <span className='text_gradient text-xl lg:text-2xl font-extrabold '>HooBank </span>
                 </span>
                 <span className="flex space-x-3 absolute -bottom-full left-5 group-hover:bottom-5 transition-all duration-700">
-                    <a className="hover:scale-125 z-40" href="https://lokmaneghedied.github.io/HooBank/" target="_blank">
+                    <a className="hover:scale-125 transition-all z-40" href="https://lokmaneghedied.github.io/HooBank/" target="_blank">
                         <TbWorldWww />
                     </a>
-                    <a className="hover:scale-125 z-40" href="https://github.com/lokmaneghedied/HooBank" target="_blank">
+                    <a className="hover:scale-125 transition-all z-40" href="https://github.com/lokmaneghedied/HooBank" target="_blank">
                         <BsGithub />
                     </a>
                 </span>
@@ -61,10 +61,10 @@ const Projects = () => {
                     <span className='text_gradient text-xl lg:text-2xl font-extrabold '>GPT-3 </span>
                 </span>
                 <span className="flex space-x-3 absolute -bottom-full left-5 group-hover:bottom-5 transition-all duration-700">
-                    <a className="hover:scale-125 z-40" href="https://lokmaneghedied.github.io/gpt-3/" target="_blank">
+                    <a className="hover:scale-125 transition-all z-40" href="https://lokmaneghedied.github.io/gpt-3/" target="_blank">
                         <TbWorldWww />
                     </a>
-                    <a className="hover:scale-125 z-40" href="https://github.com/lokmaneghedied/gpt-3" target="_blank">
+                    <a className="hover:scale-125 transition-all z-40" href="https://github.com/lokmaneghedied/gpt-3" target="_blank">
                         <BsGithub />
                     </a>
                 </span>
@@ -83,10 +83,10 @@ const Projects = () => {
                     <span className='text_gradient text-xl lg:text-2xl font-extrabold '>COMING SOON...  </span>
                 </span>
                 <span className="flex space-x-3 absolute -bottom-full left-5 group-hover:bottom-5 transition-all duration-700">
-                    <a className="hover:scale-125 z-40" href="" target="_blank">
+                    <a className="hover:scale-125 transition-all z-40" href="" target="_blank">
                         <TbWorldWww />
                     </a>
-                    <a className="hover:scale-125 z-40" href="" target="_blank">
+                    <a className="hover:scale-125 transition-all z-40" href="" target="_blank">
                         <BsGithub />
                     </a>
                 </span>

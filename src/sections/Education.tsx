@@ -41,7 +41,7 @@ const Education = () => {
                                 initial='hidden'
                                 whileInView={'show'}
                                 viewport={{once : false, amount: 0.7}}
-                                className={isEven(education.id) ? 'border-2 border-white/50 w-10/12 lg:h-[190px] lg:grid content-center lg:space-y-2 lg:col-start-2 education_card px-4 py-2 rounded-3xl cursor-pointer lg:place-self-end' : 'border-2 border-white/50 w-10/12 lg:h-[190px] lg:grid content-center lg:space-y-2 lg:col-start-1 education_card px-4 py-2 rounded-3xl cursor-pointer '}>
+                                className={isEven(education.id) ? 'border-2 border-white/50 w-10/12 lg:h-[190px] lg:grid content-center lg:space-y-2 lg:col-start-2 education_card px-4 py-2 rounded-3xl lg:place-self-end' : 'border-2 border-white/50 w-10/12 lg:h-[190px] lg:grid content-center lg:space-y-2 lg:col-start-1 education_card px-4 py-2 rounded-3xl'}>
                                 <h1 
                                     className={styles.subtitle}>{education.title}
                                 </h1>   
@@ -52,13 +52,12 @@ const Education = () => {
                                     className={styles.paragraph}>{education.chapters}
                                 </p>}
                                 {education.certificate && 
-                                <a
-                                    className="place-self-end flex items-center space-x-2 hover:underline decoration-blue-700 underline-offset-4 " href={education.certificate} target="_blank" >
+                                <span className='place-self-end flex items-center space-x-2 '>
                                     <p className={styles.gradient__text}>See Certificate !</p>
-                                    <span className="mt-1 md:mt-0 w-[20px] h-[20px] lg:w-[30px] lg:h-[30px] flex justify-center items-center btn rounded-full">
+                                    <a className="w-[20px] h-[20px] lg:w-[30px] lg:h-[30px] flex justify-center items-center btn rounded-full" href={education.certificate} target="_blank" >
                                         <FiExternalLink className="w-[10px] h-[10px] lg:w-auto lg:h-auto"/>
-                                    </span>
-                                </a>}
+                                    </a>
+                                </span>}
                             </motion.span>
                     </ul>
                 ))}

@@ -108,28 +108,28 @@ const Home = () => {
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{once : false, amount: 0.7}}  
-                            className='cursor-pointer' href="https://github.com/lokmaneghedied" target='_blank'><FaGithub  className='cursor-pointer hover:scale-125'/>
+                            className='cursor-pointer' href="https://github.com/lokmaneghedied" target='_blank'><FaGithub  className='cursor-pointer transition-all hover:scale-125'/>
                         </motion.a>
                         <motion.a
                             variants={fadeIn('down',0.5)}
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{once : false, amount: 0.7}}  
-                            className='cursor-pointer' href="https://leetcode.com/lokmane_ghedied/" target='_blank'><SiLeetcode  className='cursor-pointer hover:scale-125'/>
+                            className='cursor-pointer' href="https://leetcode.com/lokmane_ghedied/" target='_blank'><SiLeetcode  className='cursor-pointer transition-all hover:scale-125'/>
                         </motion.a> 
                         <motion.a 
                             variants={fadeIn('down',0.5)}
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{once : false, amount: 0.7}}                         
-                            className='cursor-pointer' href="https://www.linkedin.com/in/lokmane-ghedied/" target='_blank'><FaLinkedinIn  className='cursor-pointer hover:scale-125'/>
+                            className='cursor-pointer' href="https://www.linkedin.com/in/lokmane-ghedied/" target='_blank'><FaLinkedinIn  className='cursor-pointer transition-all hover:scale-125'/>
                         </motion.a>
                         <motion.a
                             variants={fadeIn('down',0.5)}
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{once : false, amount: 0.7}}  
-                            className='cursor-pointer' href="https://www.freecodecamp.org/lokmaneghedied" target='_blank'><FaFreeCodeCamp  className='cursor-pointer hover:scale-125'/>
+                            className='cursor-pointer' href="https://www.freecodecamp.org/lokmaneghedied" target='_blank'><FaFreeCodeCamp  className='cursor-pointer transition-all hover:scale-125'/>
                         </motion.a> 
                     </span>
                 </div>
