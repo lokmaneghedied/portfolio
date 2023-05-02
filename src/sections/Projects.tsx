@@ -23,7 +23,7 @@ const Projects = () => {
                 viewport={{once : false, amount: 0.7}} 
                 className="w-[90%] h-1/5 lg:h-auto">
                 <h1 className={styles.title}>MY LATEST PROJECTS:</h1>
-                <p className={styles.paragraph}>Using ReactJS and TailwindCSS I created visually appealing, user-friendly, and responsive web pages. You can either check out the web pages or view the source code.</p>
+                <p className={styles.paragraph}>Using ReactJS and TailwindCSS I created visually appealing, user-friendly, and responsive websites. You can either check out the websites or view the source code.</p>
             </motion.div>
             {/* HooBank */}
             <motion.div

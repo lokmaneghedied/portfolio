@@ -42,7 +42,7 @@ const Education = () => {
                         initial='hidden'
                         whileInView={'show'}
                         className={styles.paragraph}>
-                            As a front-end developer, I designed and implemented an admin dashboard with multiple features and functionalities using Vue.js, and state management (Pinia) to provide efficient data management. The dashboard included :
+                            As a front-end developer, I designed and created an admin dashboard with multiple features and functionalities using Vue.js, and state management (Pinia) to provide efficient data management. The dashboard included :
                     </motion.p>
                     <motion.p 
                         variants={fadeIn('right',0.5)}
@@ -63,7 +63,7 @@ const Education = () => {
                         initial='hidden'
                         whileInView={'show'}
                         className={styles.paragraph}>
-                            - I also implemented an admins tab with functionality similar to the users' page but specifically for admins.
+                            - I also created an admins tab with functionality similar to the users' page but specifically for admins.
                     </motion.p>
                     <motion.p 
                         variants={fadeIn('right',0.5)}
