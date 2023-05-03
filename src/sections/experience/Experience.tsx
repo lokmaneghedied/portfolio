@@ -96,7 +96,7 @@ const Education = () => {
                     </motion.span>
                 </div>
                 {/* CARDS */}
-                <div className="w-[80%] sm:w-[60%] lg:w-[40%] h-[30%] xxs:h-[300px] sm:h-[450px] lg:h-full object-contain relative ">
+                <div className="w-[80%] sm:w-[60%] lg:w-[40%] h-[30%] xxs:h-[300px] sm:h-[350px] lg:h-full object-contain relative ">
                     <motion.div
                         variants={fadeIn('left',0.3)}
                         initial='hidden'
