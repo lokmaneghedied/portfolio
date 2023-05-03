@@ -31,7 +31,7 @@ const Projects = () => {
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{once : false, amount: 0.7}}  
-                className="w-[90%] sm:w-[60%] lg:w-[90%] h-1/5 lg:h-full group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                className="w-[90%] sm:w-[70%] lg:w-[90%] h-1/5 lg:h-full group relative overflow-hidden border-2 border-white/50 rounded-xl">
                     <div className="group-hover:bg-black/50 w-full h-full absolute z-40 transition-all duration-500"></div>
                     <img className="group-hover:scale-125 transition-all duration-500 h-full" src={hoobank} alt="HooBank" />
                             {/* links */}
@@ -53,7 +53,7 @@ const Projects = () => {
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{once : false, amount: 0.7}} 
-                className="w-[90%] sm:w-[60%] lg:w-[90%] h-1/5 lg:h-full group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                className="w-[90%] sm:w-[70%] lg:w-[90%] h-1/5 lg:h-full group relative overflow-hidden border-2 border-white/50 rounded-xl">
                 <div className="group-hover:bg-black/50 w-full h-full absolute z-40 transition-all duration-500"></div>
                 <img className="group-hover:scale-125 transition-all duration-500 h-full" src={gpt3} alt="GPT-3" />
                 {/* links */}
@@ -75,7 +75,7 @@ const Projects = () => {
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{once : false, amount: 0.7}} 
-                className="w-[90%] sm:w-[60%] lg:w-[90%] h-1/5 lg:h-full group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                className="w-[90%] sm:w-[70%] lg:w-[90%] h-1/5 lg:h-full group relative overflow-hidden border-2 border-white/50 rounded-xl">
                 <div className="group-hover:bg-black/50 w-full h-full absolute z-40 transition-all duration-500"></div>
                 <img className="group-hover:scale-125 transition-all duration-500 h-full" src={gericht} alt="GERICHT" />
                 {/* links */}
