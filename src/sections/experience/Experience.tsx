@@ -15,9 +15,9 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 
 const Education = () => {
     return ( 
-        <section id='experience' className="h-[700px] md:h-[800px] lg:h-screen w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around space-y-12 lg:space-y-0">
+        <section id='experience' className="h-[700px] md:h-[800px] lg:h-screen w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around space-y-12 sm:space-y-6 lg:space-y-0">
                 {/* DESCRIPTION */}
-                <div className="w-11/12 lg:w-[40%] h-[70%] xxs:h-[60%] sm:h-[50%] lg:h-fit flex flex-col justify-center items-start lg:space-y-2">
+                <div className="w-11/12 lg:w-[50%] h-[70%] xxs:h-[60%] sm:h-[50%] lg:h-fit flex flex-col justify-center items-start lg:space-y-2 ">
                     <motion.h1 
                         variants={fadeIn('right',0.3)}
                         initial='hidden'
@@ -96,19 +96,19 @@ const Education = () => {
                     </motion.span>
                 </div>
                 {/* CARDS */}
-                <div className="w-[80%] sm:w-[70%] lg:w-[40%] h-[30%] xxs:h-[300px] sm:h-[450px] lg:h-full object-contain relative ">
+                <div className="w-[80%] sm:w-[60%] lg:w-[40%] h-[30%] xxs:h-[300px] sm:h-[450px] lg:h-full object-contain relative ">
                     <motion.div
                         variants={fadeIn('left',0.3)}
                         initial='hidden'
                         whileInView={'show'}
                         className="cards w-full left-0 bottom-0 lg:bottom-1/4 absolute md:hidden lg:block">
-                        <div className="card one left-0 bottom-[60px] lg:bottom-[90px] ">
-                        <img src={spinet3} alt="spinet" />
+                        <div className="card one left-0 bottom-[75px] lg:bottom-[90px] ">
+                            <img src={spinet3} alt="spinet" />
                         </div>
-                        <div className="card two -left-1 bottom-[30px] lg:bottom-[45px]">
+                        <div className="card two -left-1 bottom-[45px] lg:bottom-[45px]">
                             <img  src={spinet2} alt="spinet" />
                         </div>
-                        <div className="card three -left-2 bottom-0 lg:bottom-[5px]">
+                        <div className="card three -left-2 bottom-[15px] lg:bottom-[5px]">
                             <img  src={spinet1} alt="spinet" />
                         </div>
                     </motion.div>
