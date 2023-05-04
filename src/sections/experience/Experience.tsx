@@ -122,22 +122,23 @@ const Education = () => {
                         variants={fadeIn('left',0.3)}
                         initial='hidden'
                         whileInView={'show'}
-                        className="lg:hidden ">
+                        className="lg:hidden rounded-xl overflow-hidden">
                             <Carousel 
                             centerMode={true}
                             showThumbs={false}
                             dynamicHeight={true}
                             emulateTouch={false}
-                            autoPlay={false}
+                            autoPlay={true}
+                            infiniteLoop={true}
                             >
                             <div>
-                                <img src={spinet1} className='pr-4 h-[200px] sm:h-auto'/>
+                                <img src={spinet1} className='pr-3 h-[200px] sm:h-[250px] md:h-auto '/>
                             </div>
                             <div>
-                                <img src={spinet2} className='pr-4 h-[200px] sm:h-auto'/>
+                                <img src={spinet2} className='pr-3 h-[200px] sm:h-[250px] md:h-auto'/>
                             </div>
                             <div>
-                                <img src={spinet3} className='pr-4 h-[200px] sm:h-auto'/>
+                                <img src={spinet3} className='pr-3 h-[200px] sm:h-[250px] md:h-auto'/>
                             </div>
                             </Carousel>
                     </motion.div>

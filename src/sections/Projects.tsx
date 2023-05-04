@@ -80,7 +80,7 @@ const Projects = () => {
                 <img className="group-hover:scale-125 transition-all duration-500 h-full" src={gericht} alt="GERICHT" />
                 {/* links */}
                 <span className="absolute -bottom-full z-40 left-5 group-hover:bottom-10 transition-all duration-500">
-                    <span className='text_gradient text-xl lg:text-2xl font-extrabold '>COMING SOON...  </span>
+                    <span className='text_gradient text-xl lg:text-2xl font-extrabold '>GERICHT</span>
                 </span>
                 <span className="flex space-x-3 absolute -bottom-full left-5 group-hover:bottom-5 transition-all duration-700">
                     <a className="hover:scale-125 transition-all z-40" href="https://lokmaneghedied.github.io/gericht/" target="_blank">
