@@ -12,12 +12,15 @@ import {fadeIn} from "../../constants";
 import { Link } from "react-scroll";
 //icons
 import { AiOutlineArrowDown } from "react-icons/ai";
+//carousel
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Education = () => {
     return ( 
-        <section id='experience' className="h-[700px] md:h-[800px] lg:h-screen w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around space-y-16 sm:space-y-0">
+        <section id='experience' className="h-full lg:h-screen w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around space-y-4 lg:space-y-0">
                 {/* DESCRIPTION */}
-                <div className="w-11/12 lg:w-[50%] h-[70%] xxs:h-[60%] sm:h-[50%] lg:h-fit flex flex-col justify-center items-start lg:space-y-2 ">
+                <div className="w-11/12 lg:w-[55%] h-[70%] xxs:h-[60%] sm:h-[50%] lg:h-fit flex flex-col justify-center items-start lg:space-y-2 ">
                     <motion.h1 
                         variants={fadeIn('right',0.3)}
                         initial='hidden'
@@ -96,34 +99,40 @@ const Education = () => {
                     </motion.span>
                 </div>
                 {/* CARDS */}
-                <div className="w-[80%] sm:w-[60%] lg:w-[40%] h-[30%] xxs:h-[300px] sm:h-[350px] lg:h-full object-contain relative ">
+                <div className="w-[80%] sm:w-[70%] lg:w-[35%] lg:h-full object-contain relative ">
                     <motion.div
                         variants={fadeIn('left',0.3)}
                         initial='hidden'
                         whileInView={'show'}
-                        className="cards w-full left-0 bottom-0 lg:bottom-1/4 absolute md:hidden lg:block">
-                        <div className="card one left-0 bottom-[75px] lg:bottom-[90px] ">
+                        className="cards w-full left-0 bottom-1/4 absolute hidden lg:block">
+                        <div className="card one left-0 bottom-[90px] ">
                             <img src={spinet3} alt="spinet" />
                         </div>
-                        <div className="card two -left-1 bottom-[45px] lg:bottom-[45px]">
+                        <div className="card two -left-1 bottom-[45px]">
                             <img  src={spinet2} alt="spinet" />
                         </div>
-                        <div className="card three -left-2 bottom-[15px] lg:bottom-[5px]">
+                        <div className="card three -left-2 bottom-[5px]">
                             <img  src={spinet1} alt="spinet" />
                         </div>
                     </motion.div>
-                    <div
-                        className="cards w-full left-0 bottom-0 absolute hidden md:block lg:hidden">
-                        <div className="card one left-0 bottom-[95px]">
-                        <img src={spinet3} alt="spinet" />
-                        </div>
-                        <div className="card two -left-1 bottom-[60px]">
-                            <img  src={spinet2} alt="spinet" />
-                        </div>
-                        <div className="card three -left-2 bottom-[25px]">
-                            <img  src={spinet1} alt="spinet" />
-                        </div>
+                    <Carousel 
+                    centerMode={true}
+                    showThumbs={false}
+                    dynamicHeight={true}
+                    emulateTouch={false}
+                    autoPlay={true}
+                    className="lg:hidden"
+                    >
+                    <div>
+                        <img src={spinet1} className='pr-4 transition-all duration-500 '/>
                     </div>
+                    <div>
+                        <img src={spinet2} className='pr-4 transition-all duration-500 '/>
+                    </div>
+                    <div>
+                        <img src={spinet3} className='pr-4 transition-all duration-500 '/>
+                    </div>
+                    </Carousel>
                 </div>
         </section>
      );

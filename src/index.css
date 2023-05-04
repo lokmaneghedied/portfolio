@@ -1,13 +1,12 @@
-/* Tailwind_config */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* googleFonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-* {    
-    font-family: 'Playfair Display', serif;
+*{    
+  font-family: 'Playfair Display', serif;
 }
 
 .btn {
