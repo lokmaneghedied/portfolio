@@ -1,6 +1,9 @@
+//assets
 import spinet1 from "../../assets/spinet1.png"
 import spinet2 from "../../assets/spinet2.png"
 import spinet3 from "../../assets/spinet3.png"
+
+
 //styles
 import { styles } from "../../style";
 import './index.css'
@@ -18,7 +21,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Education = () => {
     return ( 
-        <section id='experience' className="h-full lg:h-screen w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around space-y-4 lg:space-y-0">
+        <section id='experience' className="h-full lg:h-screen w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around space-y-6 lg:space-y-0">
                 {/* DESCRIPTION */}
                 <div className="w-11/12 lg:w-[55%] h-[70%] xxs:h-[60%] sm:h-[50%] lg:h-fit flex flex-col justify-center items-start lg:space-y-2 ">
                     <motion.h1 
@@ -99,7 +102,7 @@ const Education = () => {
                     </motion.span>
                 </div>
                 {/* CARDS */}
-                <div className="w-[80%] sm:w-[70%] lg:w-[35%] lg:h-full object-contain relative ">
+                <div className="w-[90%] sm:w-[70%] lg:w-[35%] lg:h-full object-contain relative ">
                     <motion.div
                         variants={fadeIn('left',0.3)}
                         initial='hidden'
@@ -115,24 +118,29 @@ const Education = () => {
                             <img  src={spinet1} alt="spinet" />
                         </div>
                     </motion.div>
-                    <Carousel 
-                    centerMode={true}
-                    showThumbs={false}
-                    dynamicHeight={true}
-                    emulateTouch={false}
-                    autoPlay={true}
-                    className="lg:hidden"
-                    >
-                    <div>
-                        <img src={spinet1} className='pr-4 transition-all duration-500 '/>
-                    </div>
-                    <div>
-                        <img src={spinet2} className='pr-4 transition-all duration-500 '/>
-                    </div>
-                    <div>
-                        <img src={spinet3} className='pr-4 transition-all duration-500 '/>
-                    </div>
-                    </Carousel>
+                    <motion.div 
+                        variants={fadeIn('left',0.3)}
+                        initial='hidden'
+                        whileInView={'show'}
+                        className="lg:hidden ">
+                            <Carousel 
+                            centerMode={true}
+                            showThumbs={false}
+                            dynamicHeight={true}
+                            emulateTouch={false}
+                            autoPlay={false}
+                            >
+                            <div>
+                                <img src={spinet1} className='pr-4 h-[200px] sm:h-auto'/>
+                            </div>
+                            <div>
+                                <img src={spinet2} className='pr-4 h-[200px] sm:h-auto'/>
+                            </div>
+                            <div>
+                                <img src={spinet3} className='pr-4 h-[200px] sm:h-auto'/>
+                            </div>
+                            </Carousel>
+                    </motion.div>
                 </div>
         </section>
      );
