@@ -29,7 +29,7 @@ const Footer = () => {
                         smooth={true}
                         spy={true}
                         offset={-200}
-                        className='font-extrabold cursor-pointer -space-y-3'>
+                        className='font-extrabold cursor-pointer -space-y-3 lg:-space-y-2'>
                         <span className="text-2xl lg:text-3xl logo">Lokmane</span>
                         <h1 className='text-lg lg:text-xl'>GHEDIED</h1>
                     </Link>

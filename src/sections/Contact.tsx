@@ -1,51 +1,55 @@
 //styles
 import { styles } from "../style";
-//UseState
-import { useState } from "react";
+//formik
+import { useFormik , FormikErrors } from "formik";
 //motions
 import { motion , useScroll } from "framer-motion";
 // fadeIn
 import { fadeIn } from '../constants';
 
+interface FormValues {
+    email: string,
+    subject: string ,
+    message :string 
+}
+
 const Contact = () => {
 
-    const [email , setEmail] = useState('')
-    const [subject , setSubject] = useState('')
-    const [message , setMessage] = useState('')
-    const [validEmail, setValidEmail] = useState(true)
-    const [validMessage, setValidMessage ] = useState(true)
-    
-
-    
-    const checkEmail= () =>{
-        const regex = /^\w+([\.-]?\w+)*@gmail\.com$/
-        if(regex.test(email)){
-            setValidEmail(true)
-        }else{setValidEmail(false)}
-        
-    }
-
-    const checkMessage=()=>{
-        if(message === ''){
-            setValidMessage(false)
-        }else{
-            setValidMessage(true)
-        }
-    }
-
-    const sendEmail= (e : any) => {
-        e.preventDefault()
-        checkEmail()
-        checkMessage()
+    const formik = useFormik({
+        initialValues:{
+            email:'',
+            subject:'',
+            message: ''
+        },
+        onSubmit : values  =>{
             if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
-              window.open(`mailto:lokmane.ghedied@gmail.com?subject=${subject}&body=${message}`)
-            } else {
-              window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=lokmane.ghedied@gmail.com&su=${subject}&body=${message}`);
+                window.open(`mailto:lokmane.ghedied@gmail.com?subject=${values.subject}&body=${values.message}`)
+              } else {
+                window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=lokmane.ghedied@gmail.com&su=${values.subject}&body=${values.message}`);
             }
-            setEmail('')
-            setSubject('')
-            setMessage('')
+        },
+        validate : values =>{
+            
+            let errors: FormikErrors<FormValues> = {};
+
+            if(!values.email){
+                errors.email = 'this field is required'
+            }else if (!/^\w+([\.-]?\w+)*@gmail\.com$/i.test(values.email)){
+                errors.email = 'Invalid email format'
+            }
+            if(!values.subject){
+                errors.subject = 'this field is required'
+            }
+            if(!values.message){
+                errors.message = 'this field is required'
+            }
+            return errors
+
         }
+    })
+    
+           
+     
 
     return ( 
         <section id='contact' className="h-full lg:h-screen w-full flex justify-center items-center my-2">
@@ -70,30 +74,41 @@ const Contact = () => {
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{once : false, amount: 0.1}} 
-                    onSubmit={sendEmail} 
+                    onSubmit={formik.handleSubmit} 
                     className="border rounded-2xl pb-24 p-6 lg:mx-6 w-11/12 md:w-[70%] lg:w-auto flex-1 flex flex-col gap-y-6">
                     <input 
                         type="text"
-                        value={email} 
-                        onBlur={checkEmail}
-                        onChange={(e)=>setEmail(e.target.value)} 
+                        name="email"
+                        value={formik.values.email}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                         placeholder="Your Email *" 
-                        className={validEmail ? 'bg-transparent outline-none transition-all w-full border-b focus:border-accent placeholder:text-white py-3' : 'bg-transparent outline-none transition-all w-full border-b  py-3 invalid_input'}  required pattern="[a-z0-9._%+-]+@gmail\.com$"/>
+                        className={formik.touched.email && formik.errors.email ? `${styles.invalid_input} py-3` : `${styles.valid_input} py-3`} 
+                        />
+                        {formik.touched.email && formik.errors.email && <p className="text-sm text-red-600">{formik.errors.email}</p>}
                     <input 
                         type="text"
-                        value={subject} 
-                        onChange={(e)=> setSubject(e.target.value)} 
-                        placeholder="Your Subject"  
-                        className="bg-transparent outline-none transition-all w-full border-b focus:border-accent placeholder:text-white py-3" 
+                        name="subject"
+                        value={formik.values.subject}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        placeholder="Your Subject *"  
+                        className={formik.touched.subject && formik.errors.subject ? `${styles.invalid_input} py-3` : `${styles.valid_input} py-3`}                       
                         />
+                        {formik.touched.subject && formik.errors.subject && <p className="text-sm text-red-600">{formik.errors.subject}</p>}
+
                     <input
                         type="text"
-                        value={message} 
-                        onBlur={checkMessage}
-                        onChange={(e)=> setMessage(e.target.value)}  
+                        name="message"
+                        value={formik.values.message}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                         placeholder="Your Message *"
-                        className={validMessage ? 'bg-transparent outline-none transition-all w-full border-b focus:border-accent placeholder:text-white py-10 ':'bg-transparent outline-none transition-all w-full border-b invalid_input placeholder:text-white py-10 '}  required pattern="^.+$" />
-                    <button className={`w-fit ${styles.gradient_btn}`}>Send message</button>
+                        className={formik.touched.message && formik.errors.message ? `${styles.invalid_input} py-10` : `${styles.valid_input} py-10`}
+                        />
+                        {formik.touched.message && formik.errors.message && <p className="text-sm text-red-600">{formik.errors.message}</p>}
+
+                    <button type="submit" className={`w-fit ${styles.gradient_btn}`}>Send message</button>
                 </motion.form>
             </div>
         </section>
@@ -101,3 +116,6 @@ const Contact = () => {
 }
  
 export default Contact;
+
+
+

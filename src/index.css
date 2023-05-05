@@ -74,8 +74,7 @@
   75% {translate : -8px 0; }
 }
 
-.invalid_input{
-  border-color: #ff0000;
+.shake_input{
   animation: shake 0.14s 3;
 }
 
