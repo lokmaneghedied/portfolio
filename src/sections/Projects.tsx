@@ -42,8 +42,8 @@ const Projects = () => {
                         <a className="hover:scale-125 transition-all z-40" href="https://lokmaneghedied.github.io/HooBank/" target="_blank">
                             <TbWorldWww className="w-[20px] h-[20px]"/>
                         </a>
-                        <a className="hover:scale-125 transition-all z-40" href="https://github.com/lokmaneghedied/HooBank" target="_blank">
-                            <BsGithub className="w-[20px] h-[20px]"/>
+                        <a className="hover:scale-125 transition-all z-40 flex items-center" href="https://github.com/lokmaneghedied/HooBank" target="_blank">
+                            <BsGithub className="w-[18px] h-[18px]"/>
                         </a>
                     </span>
             </motion.div>
@@ -64,8 +64,8 @@ const Projects = () => {
                     <a className="hover:scale-125 transition-all z-40" href="https://lokmaneghedied.github.io/gpt-3/" target="_blank">
                         <TbWorldWww className="w-[20px] h-[20px]" />
                     </a>
-                    <a className="hover:scale-125 transition-all z-40" href="https://github.com/lokmaneghedied/gpt-3" target="_blank">
-                        <BsGithub className="w-[20px] h-[20px]" />
+                    <a className="hover:scale-125 transition-all z-40 flex items-center" href="https://github.com/lokmaneghedied/gpt-3" target="_blank">
+                        <BsGithub className="w-[18px] h-[18px]" />
                     </a>
                 </span>
             </motion.div>
@@ -86,8 +86,8 @@ const Projects = () => {
                     <a className="hover:scale-125 transition-all z-40" href="https://lokmaneghedied.github.io/gericht/" target="_blank">
                         <TbWorldWww className="w-[20px] h-[20px]"/>
                     </a>
-                    <a className="hover:scale-125 transition-all z-40" href="https://github.com/lokmaneghedied/gericht" target="_blank">
-                        <BsGithub className="w-[20px] h-[20px]"/>
+                    <a className="hover:scale-125 transition-all z-40 flex items-center" href="https://github.com/lokmaneghedied/gericht" target="_blank">
+                        <BsGithub className="w-[18px] h-[18px]"/>
                     </a>
                 </span>
             </motion.div>
