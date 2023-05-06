@@ -33,7 +33,8 @@ const About = () => {
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{once : false, amount: 0.7}} 
-                    className={`w-10/12 ${styles.subtitle}` }>Skilled web developer with a passion for creating high-quality, User-friendly and Responsive webpages that deliver exceptional user experiences. </motion.p>
+                    className={`w-10/12 ${styles.subtitle}` }>As a skilled front-end developer, I am committed to delivering high-quality, user-friendly, and responsive web pages that meet the needs and expectations of my clients. 
+                </motion.p>
                 <motion.p 
                     variants={fadeIn('left',0.3)}
                     initial='hidden'
