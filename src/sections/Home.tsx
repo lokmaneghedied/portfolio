@@ -60,9 +60,11 @@ const Home = () => {
                             className='font-bold text-xl lg:text-3xl h-10 lg:h-auto text-center lg:text-start'>
                                 I AM A <TypeAnimation 
                                     sequence={[
+                                        'WEB DEVELOPER',
+                                        2000,
                                         'FRONT-END DEVELOPER',
                                         2000,
-                                        'WEB DEVELOPER',
+                                        'BACK-END DEVELOPER',
                                         2000,
                                         ]}
                                     speed={50}
