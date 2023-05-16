@@ -78,7 +78,7 @@ const Home = () => {
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{once : false, amount: 0.7}} 
-                        className='w-10/12 lg:w-2/3 text-slate-300'>
+                        className='w-10/12 lg:w-2/3 text-slate-300 text-center lg:text-start'>
                             Skilled web developer with a passion for creating high-quality, User-friendly and Responsive webpages that deliver exceptional user experiences.
                     </motion.p>
                     {/* BUTTONS */}
