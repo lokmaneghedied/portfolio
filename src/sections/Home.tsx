@@ -57,14 +57,12 @@ const Home = () => {
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{once : false, amount: 0.7}}
-                            className='font-bold text-xl lg:text-3xl h-16 lg:h-auto text-center lg:text-start'>
+                            className='font-bold text-xl lg:text-3xl h-10 lg:h-auto text-center lg:text-start'>
                                 I AM A <TypeAnimation 
                                     sequence={[
-                                        'WEB DEVELOPER',
-                                        2000,
                                         'FRONT-END DEVELOPER',
                                         2000,
-                                        'BACK-END DEVELOPER',
+                                        'WEB DEVELOPER',
                                         2000,
                                         ]}
                                     speed={50}
