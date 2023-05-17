@@ -25,6 +25,7 @@ const NavBar = () => {
                     activeClass="active"
                     smooth={true}
                     spy={true}
+                    offset={5}
                     className={styles.navLink}>
                     <AiOutlineUser />
                 </Link>
@@ -49,6 +50,7 @@ const NavBar = () => {
                     activeClass="active"
                     smooth={true}
                     spy={true}
+                    offset={5}
                     className={`text-white ${styles.navLink}`}>
                     <BsChatSquareText />
                 </Link>
