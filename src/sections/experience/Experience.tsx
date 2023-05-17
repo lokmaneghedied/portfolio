@@ -21,7 +21,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Education = () => {
     return ( 
-        <section id='experience' className="h-full lg:h-screen w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around space-y-6 lg:space-y-0">
+        <section id='experience' className="h-full lg:h-screen w-full flex flex-col justify-start items-center lg:flex-row lg:justify-around space-y-6 lg:space-y-0 py-4 lg:py-0">
                 {/* DESCRIPTION */}
                 <div className="w-11/12 lg:w-[55%] h-[70%] xxs:h-[60%] sm:h-[50%] lg:h-fit flex flex-col justify-center items-start lg:space-y-2 ">
                     <motion.h1 
