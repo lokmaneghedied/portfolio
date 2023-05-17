@@ -25,7 +25,7 @@ const NavBar = () => {
                     activeClass="active"
                     smooth={true}
                     spy={true}
-                    offset={5}
+                    offset={10}
                     className={styles.navLink}>
                     <AiOutlineUser />
                 </Link>

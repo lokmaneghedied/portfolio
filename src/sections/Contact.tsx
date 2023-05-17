@@ -3,7 +3,7 @@ import { styles } from "../style";
 //formik
 import { useFormik , FormikErrors } from "formik";
 //motions
-import { motion , useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 // fadeIn
 import { fadeIn } from '../constants';
 
@@ -52,7 +52,7 @@ const Contact = () => {
      
 
     return ( 
-        <section id='contact' className="h-full lg:h-screen w-full flex justify-center items-center my-2">
+        <section id='contact' className="h-full lg:h-screen w-full flex justify-center items-center pt-3 pb-14">
             <div className="w-11/12 h-4/5 lg:h-full flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0">
                 {/* TEXT */}
                 <motion.div
