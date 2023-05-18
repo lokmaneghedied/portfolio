@@ -14,7 +14,7 @@ import { fadeIn } from '../constants';
 
 const Projects = () => {
     return ( 
-        <section id="projects" className="lg:h-full w-full flex flex-col items-center justify-center space-y-4 pt-8 lg:pt-0 lg:grid lg:justify-items-center lg:content-center lg:grid-cols-2 gap-4 ">
+        <section id="projects" className="lg:h-screen w-full flex flex-col items-center justify-center space-y-4 lg:space-y-0 pt-8 lg:pt-0 lg:grid lg:justify-items-center lg:content-center lg:grid-cols-2 gap-4 ">
             {/* TITLE + DESCRIPTION */}
             <motion.div 
                 variants={fadeIn('right',0.3)}
