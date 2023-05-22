@@ -50,7 +50,6 @@ const NavBar = () => {
                     activeClass="active"
                     smooth={true}
                     spy={true}
-                    offset={10}
                     className={`text-white ${styles.navLink}`}>
                     <BsChatSquareText />
                 </Link>
