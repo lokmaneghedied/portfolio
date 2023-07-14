@@ -108,13 +108,13 @@ const Education = () => {
                         initial='hidden'
                         whileInView={'show'}
                         className="cards w-full left-0 bottom-1/4 absolute hidden lg:block">
-                        <div className="card one left-0 bottom-[90px] ">
+                        <div className="card one left-0 bottom-[120px] ">
                             <img src={spinet3} alt="spinet" />
                         </div>
-                        <div className="card two -left-1 bottom-[45px]">
+                        <div className="card two -left-1 bottom-[70px]">
                             <img  src={spinet2} alt="spinet" />
                         </div>
-                        <div className="card three -left-2 bottom-[5px]">
+                        <div className="card three -left-2 bottom-[20px]">
                             <img  src={spinet1} alt="spinet" />
                         </div>
                     </motion.div>
