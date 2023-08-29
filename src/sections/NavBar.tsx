@@ -9,8 +9,8 @@ import { styles } from "../style";
 
 const NavBar = () => {
     return ( 
-        <section className="grid w-full fixed bottom-4 xs:bottom-4 lg:bottom-8 z-50">
-            <nav className="flex justify-around items-center place-self-center w-10/12 sm:w-1/2 lg:w-1/3 h-[70px] bg-black/20 rounded-full backdrop-blur-2xl">
+        <section className="grid w-full">
+            <nav className=" fixed bottom-4 xs:bottom-4 lg:bottom-8 z-50 flex justify-around items-center place-self-center w-10/12 sm:w-1/2 lg:w-1/3 h-[70px] bg-black/20 rounded-full backdrop-blur-2xl">
                 <Link 
                     to="home" 
                     activeClass="active"

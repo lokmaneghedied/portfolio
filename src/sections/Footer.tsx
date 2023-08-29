@@ -6,13 +6,11 @@ import { CiLocationOn } from "react-icons/ci";
 import { Link } from "react-scroll";
 
 const Footer = () => {
-
     const openPhone = ():void =>{
         if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
           window.location.href = "tel:+213672132633";
         }
       }
-
     const openMaps= ():void => {
         window.open("https://www.google.com/maps/place/Jijel+Province/@36.7270623,5.3041575,9z/data=!3m1!4b1!4m6!3m5!1s0x12f2469374b8be63:0x13bd084ff97ca4da!8m2!3d36.7179681!4d5.9832577!16zL20vMDU0MGhm")
       }
@@ -22,7 +20,7 @@ const Footer = () => {
             {/* LOGO + CONTACTS */}
             <div className="flex justify-between">
                 {/* LOGO + TITLE */}
-                <div>
+                <div className="h-full flex flex-col justify-start">
                     <Link 
                         to="home" 
                         activeClass="active"
@@ -45,9 +43,9 @@ const Footer = () => {
                 </div>
             </div>
             {/* ICONS */}
-            <div className="flex justify-between pt-2 ">
+            <div className="flex justify-between pt-2">
                 <p className="text-xs md:text-sm xl:text-base text-white/50 w-1/2">April 2023 - GHEDIED Lokmane</p>
-                <span className="flex justify-end items-center space-x-2 ">
+                <span className="flex justify-end items-center space-x-2">
                     <a href="https://www.linkedin.com/in/lokmane-ghedied/" target='_blank'>
                        <FaLinkedinIn className="w-4 h-4 lg:w-5 lg:h-5 hover:scale-125 transition-all"/>
                     </a>
