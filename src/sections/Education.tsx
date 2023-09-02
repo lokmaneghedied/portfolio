@@ -1,17 +1,10 @@
-//constants
 import { educations } from "../constants";
-//styles
-import { styles } from "../style";
-//icons
 import { FiExternalLink } from "react-icons/fi";
-//motions
 import { motion , useScroll } from "framer-motion";
-// fadeIn
 import { fadeIn } from '../constants';
-//Ref
 import { useRef } from "react";
-//Icons
 import CircleIcon from "../components/CircleIcon";
+
 const Education = () => {
     const ref = useRef(null)
     const { scrollYProgress } = useScroll(
@@ -23,11 +16,12 @@ const Education = () => {
     const isEven= (x:number):boolean =>{
         return x % 2 === 0;
     }
+    
     return ( 
         <section id="education" ref={ref} className="lg:h-[850px] w-full flex justify-start items-center relative mt-10 md:mt-0">
             {/* EXPERIENCE */}
             <div  className="w-full h-full sm:h-[90%] space-y-4 lg:space-y-0 flex flex-col justify-center lg:px-8">
-                <h1 className={`px-2 lg:py-4 ${styles.title}`}>EDUCATION</h1>
+                <h1 className='px-2 lg:py-4 title'>EDUCATION</h1>
                 {educations.map((education)=>(
                     <ul 
                         ref={ref}  
@@ -41,19 +35,19 @@ const Education = () => {
                                 initial='hidden'
                                 whileInView={'show'}
                                 viewport={{once : false, amount: 0.7}}
-                                className={isEven(education.id) ? 'border-2 border-white/50 w-10/12 lg:h-[190px] lg:grid content-center lg:space-y-2 lg:col-start-2 education_card px-4 py-2 rounded-3xl lg:place-self-end' : 'border-2 border-white/50 w-10/12 lg:h-[190px] lg:grid content-center lg:space-y-2 lg:col-start-1 education_card px-4 py-2 rounded-3xl'}>
+                                className={`border-2 border-white/50 w-full lg:w-10/12 lg:h-[200px] lg:grid content-center space-y-1 education_card px-4 py-2 rounded-3xl ${isEven(education.id) ? 'lg:col-start-2 lg:place-self-end' : 'lg:col-start-1'}`}>
                                 <h1 
-                                    className={styles.subtitle}>{education.title}
+                                    className='subtitle'>{education.title}
                                 </h1>   
                                 <p 
-                                    className={styles.subtitle}>{education.date}
+                                    className='subtitle'>{education.date}
                                 </p>
                                 {education.chapters && <p
-                                    className={styles.paragraph}>{education.chapters}
+                                    className='paragraph'>{education.chapters}
                                 </p>}
                                 {education.certificate && 
-                                <span className='place-self-end flex items-center space-x-2 '>
-                                    <p className={styles.gradient__text}>See Certificate !</p>
+                                <span className='place-self-end flex items-center space-x-2'>
+                                    <p className='gradient__text'>See Certificate !</p>
                                     <a className="w-[20px] h-[20px] lg:w-[30px] lg:h-[30px] flex justify-center items-center btn rounded-full" href={education.certificate} target="_blank" >
                                         <FiExternalLink className="w-[10px] h-[10px] lg:w-auto lg:h-auto"/>
                                     </a>

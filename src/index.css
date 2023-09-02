@@ -4,77 +4,59 @@
 @tailwind components;
 @tailwind utilities;
 
-
-*{    
-  font-family: 'Playfair Display', serif;
-}
-
-.btn {
-    background: linear-gradient(
-      92.23deg,
-      #ff56f6 21.43%,
-      #b936ee 50.63%,
-      #3bace2 100%,
-      #406aff 117.04%
-    );
-    box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+@layer base {
+  html {
+    font-family: 'Playfair Display', serif;
   }
-  
-  .btn:hover {
-    background: linear-gradient(
-      92.23deg,
-      #406aff 21.43%,
-      #3bace2 50.63%,
-      #b936ee 100%,
-      #ff56f6 117.04%
-    );
-}
-  
-.gradient,
-.active {
-    background: linear-gradient(
-      92.23deg,
-      #406aff 21.43%,
-      #3bace2 50.63%,
-      #b936ee 100%,
-      #ff56f6 117.04%
-    );
-}
-  
-.active {
-  color: #fff;
-  padding: 1rem;
-  border-radius: 100%;
-}
-  
-.logo{
-  background: radial-gradient(80% 70% at 88% 50%, #42A6E3 0.89%, #42A6E3 17.23%, #42A6E3 42.04%, #FF56F6 55.12%, #FF56F6 71.54%, #FF56F6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
 }
 
-.text_gradient {
-  @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold hover:from-[#FF56F6] hover:to-[#42A6E3];
+@layer components {
+  .education_card {
+    @apply hover:bg-gradient-to-tr from-[#b809c3] via-[#5e0464] to-[#110853];
+  }
+  .text_gradient {
+    @apply text-transparent bg-clip-text font-bold bg-gradient-to-r from-[#42A6E3] to-[#FF56F6] hover:from-[#FF56F6] hover:to-[#42A6E3];
+  }
+  .active {
+    @apply text-white p-4 rounded-full bg-gradient-to-r from-[#406aff] from-[21.43%] via-[#3bace2] via-[50.63%] to-[#b936ee]
+  }
+  .btn {
+    @apply bg-gradient-to-r from-[#ff56f6] from-[21.43%] via-[#b936ee] via-[50.63%] to-[#3bace2] shadow-[0_4px_107px_] shadow-[#ff56f682] hover:from-[#406aff] hover:from-[21.43%] hover:via-[#3bace2] hover:via-[50.63%] hover:to-[#b936ee]
+  }
+  .navLink{
+    @apply cursor-pointer w-[60px] h-[60px] flex justify-center items-center
+  }
+  .gradient_btn{
+    @apply flex items-center space-x-2 btn cursor-pointer rounded-full py-2 px-3 font-bold text-xs xs:text-sm sm:text-base
+  }
+  .gradient__text{
+    @apply text_gradient flex items-center rounded-full font-bold text-xs md:text-sm lg:text-base
+  }
+  .title{
+    @apply font-bold text-2xl md:text-3xl lg:text-4xl text-accent
+  }
+  .subtitle{
+    @apply md:text-sm lg:text-base font-extrabold
+  }
+  .paragraph{
+    @apply text-xs md:text-sm lg:text-base text-slate-300
+  }
+  .valid_input{
+    @apply bg-transparent outline-none transition-all w-full border-b focus:border-accent placeholder:text-white
+  }
+  .invalid_input{
+    @apply bg-transparent outline-none transition-all w-full border-b border-red-600 placeholder:text-white animate-shake
+  }
+  .icon{
+    @apply cursor-pointer transition-all hover:scale-125
+  }
+  .footer_icon{
+    @apply w-4 h-4 lg:w-5 lg:h-5 hover:scale-125 transition-all cursor-pointer
+  }
+  .footer_link{
+    @apply text-xs md:text-sm xl:text-base text-white/60 hover:text-white/90 decoration-white/90 transition-all hover:underline underline-offset-2
+  }
+  .card{
+    @apply absolute rounded-xl overflow-hidden transition-all duration-500 ease-out -rotate-3 hover:z-[2] hover:rotate-0
+  }
 }
-
-.education_card:hover{
-  background:-moz-linear-gradient(28deg, rgba(184, 9, 195, 1) 0%, rgba(94, 4, 100, 1) 51%, rgba(17, 8, 83, 1) 100%); 
-  background:-webkit-linear-gradient(28deg, rgba(184, 9, 195, 1) 0%, rgba(94, 4, 100, 1) 51%, rgba(17, 8, 83, 1) 100%);
-  background:-o-linear-gradient(28deg, rgba(184, 9, 195, 1) 0%, rgba(94, 4, 100, 1) 51%, rgba(17, 8, 83, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B809C3', endColorstr='#110853', GradientType=1 );
-  background:-ms-linear-gradient(28deg, rgba(184, 9, 195, 1) 0%, rgba(94, 4, 100, 1) 51%, rgba(17, 8, 83, 1) 100%);
-  background:linear-gradient(28deg, rgba(184, 9, 195, 1) 0%, rgba(94, 4, 100, 1) 51%, rgba(17, 8, 83, 1) 100%);
-}
-
-@keyframes shake{
-  0%, 100% {translate : 0;}
-  25% {translate : 8px 0;}
-  75% {translate : -8px 0; }
-}
-
-.shake_input{
-  animation: shake 0.14s 3;
-}
-

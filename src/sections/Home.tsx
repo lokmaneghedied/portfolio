@@ -1,23 +1,11 @@
-// styles
-import { styles } from '../style';
-// assets
 import image from '../assets/image.svg'
-// icons
-import { HiDownload } from "react-icons/hi";
 import { BsSend } from "react-icons/bs";
-import { SiLeetcode } from "react-icons/si";
 import {FaGithub , FaLinkedinIn , FaFreeCodeCamp } from "react-icons/fa";
-// type_animation
 import { TypeAnimation } from "react-type-animation";
-// motion
 import { motion } from "framer-motion";
-// fadeIn
-import { fadeIn } from '../constants';
-//constants
-import { resume } from '../constants'
+import { fadeIn , resume } from '../constants';
 
 const Home = () => {
-
     const downloadResume = () => {
         var pdfDataUri = "data:application/pdf;base64," + resume;
         var link = document.createElement("a");
@@ -27,7 +15,6 @@ const Home = () => {
         link.click();
         document.body.removeChild(link);
       }
-
     const sendMail= () => {
       if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
         window.open("mailto:lokmane.ghedied@gmail.com")
@@ -37,8 +24,7 @@ const Home = () => {
     }
 
     return ( 
-        <section id='home' className="h-screen w-full flex flex-col justify-start ">            
-            {/* MAIN-DIV */}
+        <section className="h-screen w-full flex flex-col justify-start ">            
             <div className="w-11/12 lg:w-10/12 h-3/4 flex flex-col justify-center lg:flex-row lg:items-center place-self-center">
                 {/* title + BUTTONS + LINK */}
                 <div className="lg:w-2/3 space-y-4 lg:space-y-6 flex flex-col justify-center items-center lg:items-start">
@@ -48,7 +34,7 @@ const Home = () => {
                         variants={fadeIn('down',0.3)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{once : false, amount: 0.7}} 
+                        viewport={{once : false}} 
                         className='font-extrabold text-4xl sm:text-5xl lg:text-6xl text-center lg:text-start '>
                             Lokmane GHEDIED
                         </motion.h1>
@@ -56,7 +42,7 @@ const Home = () => {
                             variants={fadeIn('down',0.3)}
                             initial='hidden'
                             whileInView={'show'}
-                            viewport={{once : false, amount: 0.7}}
+                            viewport={{once : false}}
                             className='font-bold text-xl lg:text-3xl h-10 lg:h-auto text-center lg:text-start'>
                                 I AM A <TypeAnimation 
                                     sequence={[
@@ -77,9 +63,9 @@ const Home = () => {
                         variants={fadeIn('down',0.4)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{once : false, amount: 0.7}} 
-                        className='w-10/12 lg:w-2/3 text-slate-300 text-center lg:text-start'>
-                            Skilled web developer with a passion for creating high-quality, User-friendly and Responsive webpages that deliver exceptional user experiences.
+                        viewport={{once : false}} 
+                        className='w-10/12 lg:w-2/3 text-center lg:text-start paragraph'>
+                            Skilled web developer with a passion for creating fully interactive, highly dynamic, and performant web applications that deliver exceptional user experiences.
                     </motion.p>
                     {/* BUTTONS */}
                     <span className='flex space-x-3'>
@@ -87,8 +73,8 @@ const Home = () => {
                             variants={fadeIn('down',0.4)}
                             initial='hidden'
                             whileInView={'show'}
-                            viewport={{once : false, amount: 0.3}} 
-                            className={styles.gradient_btn}>
+                            viewport={{once : false}} 
+                            className='gradient_btn'>
                             <BsSend />
                             <button onClick={sendMail}>Contact Me</button>
                         </motion.span>
@@ -96,8 +82,8 @@ const Home = () => {
                             variants={fadeIn('down',0.4)}
                             initial='hidden'
                             whileInView={'show'}
-                            viewport={{once : false, amount: 0.3}}  
-                            className={styles.gradient__text}>
+                            viewport={{once : false}}  
+                            className='gradient__text'>
                             <button onClick={downloadResume}>My Resume</button>
                         </motion.span>
                     </span>
@@ -107,29 +93,22 @@ const Home = () => {
                             variants={fadeIn('down',0.5)}
                             initial='hidden'
                             whileInView={'show'}
-                            viewport={{once : false, amount: 0.7}}  
-                            className='cursor-pointer' href="https://github.com/lokmaneghedied" target='_blank'><FaGithub  className='cursor-pointer transition-all hover:scale-125'/>
+                            viewport={{once : false}}  
+                            href="https://github.com/lokmaneghedied" target='_blank'><FaGithub className='icon'/>
                         </motion.a>
-                        <motion.a
-                            variants={fadeIn('down',0.5)}
-                            initial='hidden'
-                            whileInView={'show'}
-                            viewport={{once : false, amount: 0.7}}  
-                            className='cursor-pointer' href="https://leetcode.com/lokmane_ghedied/" target='_blank'><SiLeetcode  className='cursor-pointer transition-all hover:scale-125'/>
-                        </motion.a> 
                         <motion.a 
                             variants={fadeIn('down',0.5)}
                             initial='hidden'
                             whileInView={'show'}
-                            viewport={{once : false, amount: 0.7}}                         
-                            className='cursor-pointer' href="https://www.linkedin.com/in/lokmane-ghedied/" target='_blank'><FaLinkedinIn  className='cursor-pointer transition-all hover:scale-125'/>
+                            viewport={{once : false}}                         
+                            href="https://www.linkedin.com/in/lokmane-ghedied/" target='_blank'><FaLinkedinIn className='icon'/>
                         </motion.a>
                         <motion.a
                             variants={fadeIn('down',0.5)}
                             initial='hidden'
                             whileInView={'show'}
-                            viewport={{once : false, amount: 0.7}}  
-                            className='cursor-pointer' href="https://www.freecodecamp.org/lokmaneghedied" target='_blank'><FaFreeCodeCamp  className='cursor-pointer transition-all hover:scale-125'/>
+                            viewport={{once : false}}  
+                            href="https://www.freecodecamp.org/lokmaneghedied" target='_blank'><FaFreeCodeCamp className='icon'/>
                         </motion.a> 
                     </span>
                 </div>
@@ -138,9 +117,9 @@ const Home = () => {
                     variants={fadeIn('up',0.3)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{once : false, amount: 0.7}} 
+                    viewport={{once : false}} 
                     className="hidden lg:block lg:w-1/3">
-                    <img src={image} alt="" />
+                    <img src={image} alt="lokmane_ghedied_image" loading="lazy"/>
                 </motion.div>
             </div>
         </section>

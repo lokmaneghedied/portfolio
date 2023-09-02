@@ -2,10 +2,7 @@
 import { AiOutlineHome , AiOutlineUser  } from "react-icons/ai";
 import { IoBriefcaseOutline  } from "react-icons/io5";
 import { BsChatSquareText , BsClipboardData } from "react-icons/bs";
-
 import { Link } from "react-scroll";
-
-import { styles } from "../style";
 
 const NavBar = () => {
     return ( 
@@ -16,8 +13,7 @@ const NavBar = () => {
                     activeClass="active"
                     smooth={true}
                     spy={true}
-                    offset={-200}
-                    className={styles.navLink}>
+                    className='navLink'>
                     <AiOutlineHome />
                 </Link>
                 <Link 
@@ -25,8 +21,7 @@ const NavBar = () => {
                     activeClass="active"
                     smooth={true}
                     spy={true}
-                    offset={10}
-                    className={styles.navLink}>
+                    className='navLink'>
                     <AiOutlineUser />
                 </Link>
                 <Link 
@@ -34,7 +29,7 @@ const NavBar = () => {
                     activeClass="active"
                     smooth={true}
                     spy={true}
-                    className={styles.navLink}>
+                    className='navLink'>
                     <IoBriefcaseOutline />
                 </Link>
                 <Link 
@@ -42,7 +37,7 @@ const NavBar = () => {
                     activeClass="active"
                     smooth={true}
                     spy={true}
-                    className={styles.navLink}>
+                    className='navLink'>
                     <BsClipboardData />
                 </Link>
                 <Link 
@@ -50,7 +45,7 @@ const NavBar = () => {
                     activeClass="active"
                     smooth={true}
                     spy={true}
-                    className={`text-white ${styles.navLink}`}>
+                    className='text-white navLink'>
                     <BsChatSquareText />
                 </Link>
             </nav>

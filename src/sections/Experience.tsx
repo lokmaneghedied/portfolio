@@ -1,23 +1,10 @@
-//assets
-import spinet1 from "../../assets/spinet1.png"
-import spinet2 from "../../assets/spinet2.png"
-import spinet3 from "../../assets/spinet3.png"
-
-
-//styles
-import { styles } from "../../style";
-import './index.css'
-//motion
+import spinet1 from "../assets/spinet1.png"
+import spinet2 from "../assets/spinet2.png"
+import spinet3 from "../assets/spinet3.png"
 import { motion } from "framer-motion";
-//variants
-import {fadeIn} from "../../constants";
-//Link_for
+import {fadeIn} from "../constants";
 import { Link } from "react-scroll";
-//icons
 import { AiOutlineArrowDown } from "react-icons/ai";
-//carousel
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Education = () => {
     return ( 
@@ -28,69 +15,80 @@ const Education = () => {
                         variants={fadeIn('right',0.3)}
                         initial='hidden'
                         whileInView={'show'}
-                        className={styles.title}>
+                        viewport={{once : false}} 
+                        className='title'>
                             EXPERIENCE
                     </motion.h1>
                     <motion.h2 
                         variants={fadeIn('right',0.4)}
                         initial='hidden'
                         whileInView={'show'}
-                        className={styles.subtitle}>
+                        viewport={{once : false}} 
+                        className='subtitle'>
                             ● INDEPENDENT CONTRACTOR FRONT END DEVELOPER:
                     </motion.h2>
                     <motion.h2 
                         variants={fadeIn('right',0.4)}
                         initial='hidden'
                         whileInView={'show'}
-                        className={styles.subtitle}>02/2023 - 03/2023 | SPINET NFC</motion.h2>
+                        viewport={{once : false}} 
+                        className='subtitle'>02/2023 - 03/2023 | SPINET NFC</motion.h2>
                     <motion.p 
                         variants={fadeIn('right',0.5)}
                         initial='hidden'
                         whileInView={'show'}
-                        className={styles.paragraph}>
+                        viewport={{once : false}} 
+                        className='paragraph'>
                             As a front-end developer, I designed and created an admin dashboard with multiple features and functionalities using Vue.js, and state management (Pinia) to provide efficient data management. The dashboard included :
                     </motion.p>
                     <motion.p 
                         variants={fadeIn('right',0.5)}
                         initial='hidden'
                         whileInView={'show'}
-                        className={styles.paragraph}>
+                        viewport={{once : false}} 
+                        className='paragraph'>
                             - Login page with authentication (Firebase).
                     </motion.p>
                     <motion.p 
                         variants={fadeIn('right',0.5)}
                         initial='hidden'
                         whileInView={'show'}
-                        className={styles.paragraph}>
+                        viewport={{once : false}} 
+                        className='paragraph'>
                             - Main page with a list of all users and the ability to filter users by name, email, or phone number. It also included the ability to create and delete users.
                     </motion.p>
                     <motion.p 
                         variants={fadeIn('right',0.5)}
                         initial='hidden'
                         whileInView={'show'}
-                        className={styles.paragraph}>
+                        viewport={{once : false}} 
+                        className='paragraph'>
                             - I also created an admins tab with functionality similar to the users' page but specifically for admins.
                     </motion.p>
                     <motion.p 
                         variants={fadeIn('right',0.5)}
                         initial='hidden'
                         whileInView={'show'}
-                        className={styles.paragraph}>
+                        viewport={{once : false}} 
+                        className='paragraph'>
                             - The dashboard also had a statistics tab that displays a graph representing users' statistics of check-ins and exchanges made per user, as well as a list of these stats each weekday(using Vue ApexCharts library).
                     </motion.p>
                     <motion.p 
                         variants={fadeIn('right',0.5)}
                         initial='hidden'
                         whileInView={'show'}
-                        className={styles.paragraph}>- Lastly, I created a settings tab where the admin can edit personal information like name, password, and phone number. The dashboard was intuitive and user-friendly and allow for easy management of users and admins.
+                        viewport={{once : false}} 
+                        className='paragraph'>- Lastly, I created a settings tab where the admin can edit personal information like name, password, and phone number. The dashboard was intuitive and user-friendly and allow for easy management of users and admins.
                         </motion.p>
                     {/* See_More */}
                     <motion.span
                         variants={fadeIn('right',0.6)}
                         initial='hidden'
-                        whileInView={'show'} 
+                        whileInView={'show'}
+                        viewport={{once : false}} 
+
                         className='flex space-x-4 self-end z-40 w-full pt-2'>
-                        <p className={styles.gradient__text}>My Latest projects </p>
+                        <p className='gradient__text'>My Latest projects </p>
                         <Link 
                             to="projects" 
                             smooth={true}
@@ -102,47 +100,22 @@ const Education = () => {
                     </motion.span>
                 </div>
                 {/* CARDS */}
-                <div className="w-[90%] sm:w-[70%] lg:w-[35%] lg:h-full object-contain relative ">
-                    <motion.div
-                        variants={fadeIn('left',0.3)}
-                        initial='hidden'
-                        whileInView={'show'}
-                        className="cards w-full left-0 bottom-1/4 absolute hidden lg:block">
-                        <div className="card one left-0 bottom-[120px] ">
-                            <img src={spinet3} alt="spinet" />
+                <motion.div 
+                    variants={fadeIn('left',0.3)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once : false}} 
+                    className="w-[80%] lg:w-[35%] h-[18rem] md:h-[22rem] lg:h-[50%] grid place-items-center relative">
+                        <div className="card top-1 translate-x-3">
+                            <img className="h-[12rem] md:h-[16rem] lg:h-auto" src={spinet3} alt="spinet" loading="lazy" />
                         </div>
-                        <div className="card two -left-1 bottom-[70px]">
-                            <img  src={spinet2} alt="spinet" />
+                        <div className="card">
+                            <img className="h-[12rem] md:h-[16rem] lg:h-auto" src={spinet2} alt="spinet" loading="lazy" />
                         </div>
-                        <div className="card three -left-2 bottom-[20px]">
-                            <img  src={spinet1} alt="spinet" />
+                        <div className="card bottom-1 -translate-x-3">
+                            <img className="h-[12rem] md:h-[16rem] lg:h-auto" src={spinet1} alt="spinet" loading="lazy" />
                         </div>
-                    </motion.div>
-                    <motion.div 
-                        variants={fadeIn('left',0.3)}
-                        initial='hidden'
-                        whileInView={'show'}
-                        className="lg:hidden rounded-xl overflow-hidden">
-                            <Carousel 
-                            centerMode={true}
-                            showThumbs={false}
-                            dynamicHeight={true}
-                            emulateTouch={false}
-                            autoPlay={true}
-                            infiniteLoop={true}
-                            >
-                            <div>
-                                <img src={spinet1} className='pr-3 h-[200px] sm:h-[250px] md:h-auto '/>
-                            </div>
-                            <div>
-                                <img src={spinet2} className='pr-3 h-[200px] sm:h-[250px] md:h-auto'/>
-                            </div>
-                            <div>
-                                <img src={spinet3} className='pr-3 h-[200px] sm:h-[250px] md:h-auto'/>
-                            </div>
-                            </Carousel>
-                    </motion.div>
-                </div>
+                </motion.div>
         </section>
      );
 }

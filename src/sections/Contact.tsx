@@ -1,5 +1,3 @@
-//styles
-import { styles } from "../style";
 //formik
 import { useFormik , FormikErrors } from "formik";
 //motions
@@ -59,7 +57,7 @@ const Contact = () => {
                     variants={fadeIn('right',0.3)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{once : false, amount: 0.1}} 
+                    viewport={{once : false}} 
                     className="w-full lg:w-1/3 h-1/3 lg:h-3/5 flex-1 flex flex-col items-start justify-center lg:justify-start lg:mx-6 space-y-4 lg:space-y-0">
                     {/* TITLE */}
                     <div className="space-y-3">
@@ -73,7 +71,7 @@ const Contact = () => {
                     variants={fadeIn('left',0.3)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{once : false, amount: 0.1}} 
+                    viewport={{once : false}} 
                     onSubmit={formik.handleSubmit} 
                     className="border rounded-2xl pb-24 p-6 lg:mx-6 w-11/12 md:w-[70%] lg:w-auto flex-1 flex flex-col gap-y-6">
                     <input 
@@ -83,7 +81,7 @@ const Contact = () => {
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         placeholder="Your Email *" 
-                        className={formik.touched.email && formik.errors.email ? `${styles.invalid_input} py-3` : `${styles.valid_input} py-3`} 
+                        className={formik.touched.email && formik.errors.email ? 'invalid_input py-3' : 'valid_input py-3'} 
                         />
                         {formik.touched.email && formik.errors.email && <p className="text-sm text-red-600">{formik.errors.email}</p>}
                     <input 
@@ -93,7 +91,7 @@ const Contact = () => {
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         placeholder="Your Subject *"  
-                        className={formik.touched.subject && formik.errors.subject ? `${styles.invalid_input} py-3` : `${styles.valid_input} py-3`}                       
+                        className={formik.touched.subject && formik.errors.subject ? 'invalid_input py-3' : 'valid_input py-3'}                       
                         />
                         {formik.touched.subject && formik.errors.subject && <p className="text-sm text-red-600">{formik.errors.subject}</p>}
 
@@ -104,11 +102,11 @@ const Contact = () => {
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         placeholder="Your Message *"
-                        className={formik.touched.message && formik.errors.message ? `${styles.invalid_input} py-10` : `${styles.valid_input} py-10`}
+                        className={formik.touched.message && formik.errors.message ? 'invalid_input py-10' : 'valid_input py-10'}
                         />
                         {formik.touched.message && formik.errors.message && <p className="text-sm text-red-600">{formik.errors.message}</p>}
 
-                    <button type="submit" className={`w-fit ${styles.gradient_btn}`}>Send message</button>
+                    <button type="submit" className='w-fit gradient_btn'>Send message</button>
                 </motion.form>
             </div>
         </section>
