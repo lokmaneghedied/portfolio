@@ -52,8 +52,12 @@ const Footer = () => {
                     <a href="https://wa.me/qr/OAEK2373L7XIH1" target='_blank'>
                         <AiOutlineWhatsApp  className="footer_icon"/>
                     </a>
-                    <CiLocationOn onClick={openMaps} className="footer_icon"/>
-                    <AiOutlinePhone onClick={openPhone} className="footer_icon"/>
+                    <span>
+                        <CiLocationOn onClick={openMaps} className="footer_icon"/>
+                    </span>
+                    <span>
+                        <AiOutlinePhone onClick={openPhone} className="footer_icon"/>
+                    </span>
                 </span>
             </div>
         </section>
