@@ -1,0 +1,72 @@
+import { Link } from "react-scroll";
+import { RiMenuLine } from "react-icons/ri";
+import { MdClose } from "react-icons/md";
+import logo from "@/assets/logo.webp";
+import { useState } from "react";
+import { headerLinks } from "@/constants";
+export default function NavBar() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  return (
+    <header className="fixed top-0 flex justify-center items-center p-4 border-b border-grayBorder w-full">
+      <div className="flex flex-col items-center xl:flex-row xl:justify-between w-full xl:w-3/5 gap-8">
+        <div className="w-full xl:w-fit flex items-center justify-between">
+          <Link
+            to="home"
+            smooth
+            offset={-100}
+            duration={500}
+            onClick={() => setIsNavOpen(false)}
+            className="w-10 h-10 cursor-pointer"
+          >
+            <img src={logo} alt="my logo" />
+          </Link>
+          <button
+            className="xl:hidden"
+            onClick={() => setIsNavOpen(!isNavOpen)}
+          >
+            {isNavOpen ? (
+              <MdClose size="1.5rem" />
+            ) : (
+              <RiMenuLine size="1.5rem" />
+            )}
+          </button>
+        </div>
+        <div
+          className={`flex-col xl:flex-row justify-start items-center gap-6 xl:gap-8 w-full xl:w-fit ${
+            isNavOpen ? "flex" : "hidden xl:flex"
+          } `}
+        >
+          {headerLinks.map(({ title, link }, indx) => (
+            <Link
+              key={indx}
+              to={link}
+              spy
+              smooth
+              duration={500}
+              offset={-100}
+              activeClass="text-secondary"
+              className="text-base xl:text-sm font-medium text-[#f7f6f7] cursor-pointer hover:scale-95 hover:text-gray transition-all duration-300"
+              onClick={() => setIsNavOpen(false)}
+            >
+              {title}
+            </Link>
+          ))}
+        </div>
+        <Link
+          to="contact"
+          spy
+          smooth
+          offset={-100}
+          duration={500}
+          className={`buttonPrimary xl:buttonSecondary md:max-w-xs xl:w-40 cursor-pointer ${
+            isNavOpen ? "block" : "hidden xl:block"
+          }`}
+          onClick={() => setIsNavOpen(false)}
+        >
+          Let's talk 👋
+        </Link>
+      </div>
+    </header>
+  );
+}

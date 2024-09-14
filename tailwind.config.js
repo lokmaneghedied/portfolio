@@ -20,10 +20,11 @@ export default {
       colors: {
         primary: '#6400e6',
         secondary: '#eba5ff',
-        dark: '#081218',
+        dark: '#0e0e0f',
         slate :'#181818',
         offWhite: '#edeaf1',
         gray: '#adabb0',
+        grayBorder: '#333338',
         green: '#04e004',
         bottleGreen: '#85e13a',
         orange: '#ffb218'
