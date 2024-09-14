@@ -1,20 +1,10 @@
 import image from '../assets/image.svg'
 import { BsSend } from "react-icons/bs";
 import {FaGithub , FaLinkedinIn , FaFreeCodeCamp } from "react-icons/fa";
-import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import { fadeIn , resume } from '../constants';
+import { fadeIn  } from '../constants';
 
 const Home = () => {
-    const downloadResume = () => {
-        var pdfDataUri = "data:application/pdf;base64," + resume;
-        var link = document.createElement("a");
-        link.download = "ResumeLokmaneGHEDIED.pdf";
-        link.href = pdfDataUri;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      }
     const sendMail= () => {
       if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
         window.open("mailto:lokmane.ghedied@gmail.com")
@@ -43,19 +33,8 @@ const Home = () => {
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{once : false}}
-                            className='font-bold text-xl lg:text-3xl h-10 lg:h-auto text-center lg:text-start'>
-                                I AM A <TypeAnimation 
-                                    sequence={[
-                                        'WEB DEVELOPER',
-                                        2000,
-                                        'FRONT-END DEVELOPER',
-                                        2000,
-                                        'BACK-END DEVELOPER',
-                                        2000,
-                                        ]}
-                                    speed={50}
-                                    repeat={Infinity}
-                                    className='text-accent w-2/3 lg:w-auto'/>
+                            className='font-bold text-xl lg:text-3xl h-10 lg:h-auto text-center lg:text-start text-accent w-2/3 lg:w-auto'>
+                                I AM A WEB DEVELOPER 
                         </motion.p>
                     </span>
                     {/* A LITTLE ABOUT */}
@@ -84,7 +63,7 @@ const Home = () => {
                             whileInView={'show'}
                             viewport={{once : false}}  
                             className='gradient__text'>
-                            <button onClick={downloadResume}>My Resume</button>
+                            <a href='https://drive.google.com/file/d/1PUHPGclMgyaLjgZYE7QBmBx9Hkf6o3Nq/view?usp=sharing'>My Resume</a>
                         </motion.span>
                     </span>
                     {/* LINKS */}

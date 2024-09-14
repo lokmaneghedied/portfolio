@@ -5,14 +5,6 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    screens: {
-      xs: '375px',
-      xxs: '470px',
-      sm: '600px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1440px',
-    },
     extend: {
       keyframes:{
         'shake':{
@@ -26,12 +18,15 @@ export default {
         'shake':'shake 0.14s 3',
       },
       colors: {
-        primary: '#0a0a0a',
-        accent: '#B809C3',
-      },
-      backgroundImage: {
-        site: "url('./assets/site-bg.jpg')",
-        about: "url('./assets/about.png')",
+        primary: '#6400e6',
+        secondary: '#eba5ff',
+        dark: '#081218',
+        slate :'#181818',
+        offWhite: '#edeaf1',
+        gray: '#adabb0',
+        green: '#04e004',
+        bottleGreen: '#85e13a',
+        orange: '#ffb218'
       },
     },
   },

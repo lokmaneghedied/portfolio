@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,57 +6,22 @@
 
 @layer base {
   html {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Manrope', serif;
   }
 }
 
 @layer components {
-  .education_card {
-    @apply hover:bg-gradient-to-tr from-[#b809c3] via-[#5e0464] to-[#110853];
+  /* Text  Headers */
+  .heading1 {
+    @apply text-3xl lg:text-4xl xl:text-5xl font-bold text-white;
   }
-  .text_gradient {
-    @apply text-transparent bg-clip-text font-bold bg-gradient-to-r from-[#42A6E3] to-[#FF56F6] hover:from-[#FF56F6] hover:to-[#42A6E3];
+  .heading2 {
+    @apply text-lg font-medium text-white;
   }
-  .active {
-    @apply text-white p-4 rounded-full bg-gradient-to-r from-[#406aff] from-[21.43%] via-[#3bace2] via-[50.63%] to-[#b936ee]
+  .details1 {
+    @apply text-base lg:text-lg xl:text-xl font-medium text-gray;
   }
-  .btn {
-    @apply bg-gradient-to-r from-[#ff56f6] from-[21.43%] via-[#b936ee] via-[50.63%] to-[#3bace2] shadow-[0_4px_107px_] shadow-[#ff56f682] hover:from-[#406aff] hover:from-[21.43%] hover:via-[#3bace2] hover:via-[50.63%] hover:to-[#b936ee]
-  }
-  .navLink{
-    @apply cursor-pointer w-[60px] h-[60px] flex justify-center items-center
-  }
-  .gradient_btn{
-    @apply flex items-center space-x-2 btn cursor-pointer rounded-full py-2 px-3 font-bold text-xs xs:text-sm sm:text-base
-  }
-  .gradient__text{
-    @apply text_gradient flex items-center rounded-full font-bold text-xs md:text-sm lg:text-base
-  }
-  .title{
-    @apply font-bold text-2xl md:text-3xl lg:text-4xl text-accent
-  }
-  .subtitle{
-    @apply md:text-sm lg:text-base font-extrabold
-  }
-  .paragraph{
-    @apply text-xs md:text-sm lg:text-base text-slate-300
-  }
-  .valid_input{
-    @apply bg-transparent outline-none transition-all w-full border-b focus:border-accent placeholder:text-white
-  }
-  .invalid_input{
-    @apply bg-transparent outline-none transition-all w-full border-b border-red-600 placeholder:text-white animate-shake
-  }
-  .icon{
-    @apply cursor-pointer transition-all hover:scale-125
-  }
-  .footer_icon{
-    @apply w-4 h-4 lg:w-5 lg:h-5 hover:scale-125 transition-all cursor-pointer
-  }
-  .footer_link{
-    @apply text-xs md:text-sm xl:text-base text-white/60 hover:text-white/90 decoration-white/90 transition-all hover:underline underline-offset-2
-  }
-  .card{
-    @apply absolute rounded-xl overflow-hidden transition-all duration-500 ease-out -rotate-3 hover:z-[2] hover:rotate-0
+  .details2 {
+    @apply text-sm font-normal;
   }
 }
