@@ -1,12 +1,11 @@
 import NavBar from "@/sections/NavBar";
+import Home from "@/sections/Home";
 
 function App() {
   return (
-    <div className="bg-dark text-white">
+    <div className="flex flex-col items-center bg-dark text-white">
       <NavBar />
-      <div className="h-screen" id="home">
-        home
-      </div>
+      <Home />
       <div className="h-screen" id="about">
         about
       </div>

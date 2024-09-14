@@ -24,9 +24,9 @@
     @apply text-sm font-normal;
   }
   .buttonPrimary {
-    @apply w-full rounded-[10px] bg-primary p-4 text-center text-base xl:text-sm font-medium text-offWhite;
+    @apply w-full rounded-[10px] bg-primary p-4 text-center text-base xl:text-sm font-medium text-offWhite cursor-pointer lg:max-w-xs xl:w-40;
   }
   .buttonSecondary {
-    @apply w-full rounded-[10px] bg-transparent p-4 text-center text-base xl:text-sm font-medium text-offWhite border border-grayBorder hover:bg-grayBorder transition-colors duration-300;
+    @apply w-full rounded-[10px] bg-transparent p-4 text-center text-base xl:text-sm font-medium text-offWhite border border-grayBorder hover:bg-grayBorder transition-colors duration-300 cursor-pointer lg:max-w-xs xl:w-40;
   }
 }

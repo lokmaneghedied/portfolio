@@ -8,8 +8,8 @@ export default function NavBar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 flex justify-center items-center p-4 border-b border-grayBorder w-full">
-      <div className="flex flex-col items-center xl:flex-row xl:justify-between w-full xl:w-3/5 gap-8">
+    <header className="fixed top-0 flex justify-center items-center p-4 border-b border-grayBorder w-full backdrop-blur-2xl">
+      <div className="flex flex-col items-center xl:flex-row xl:justify-between w-full md:w-10/12 lg:w-4/5 xl:w-3/5 gap-8">
         <div className="w-full xl:w-fit flex items-center justify-between">
           <Link
             to="home"
@@ -59,7 +59,7 @@ export default function NavBar() {
           smooth
           offset={-100}
           duration={500}
-          className={`buttonPrimary xl:buttonSecondary md:max-w-xs xl:w-40 cursor-pointer ${
+          className={`buttonPrimary xl:buttonSecondary ${
             isNavOpen ? "block" : "hidden xl:block"
           }`}
           onClick={() => setIsNavOpen(false)}
