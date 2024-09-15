@@ -1,6 +1,6 @@
 type TitleTicketProps = {
   title: string;
-  Icon?: React.ReactElement;
+  Icon: React.ReactElement;
 };
 
 export default function TitleTicket({ title, Icon }: TitleTicketProps) {

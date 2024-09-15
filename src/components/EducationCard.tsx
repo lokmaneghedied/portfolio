@@ -1,5 +1,5 @@
-import { HiOutlineExternalLink } from "react-icons/hi";
-import { IoSchoolSharp } from "react-icons/io5";
+import SchoolIcon from "@/assets/svg/SchoolIcon.svg";
+import ExternalLink from "@/assets/svg/ExternalLink.svg";
 
 type EducationCardProps = {
   title: string;
@@ -16,7 +16,7 @@ export default function EducationCard({
 }: EducationCardProps) {
   return (
     <div className="bg-slate rounded-[10px] border border-grayBorder flex flex-col xl:flex-row items-start justify-start gap-4 p-4">
-      <div className="text-gray text-4xl">{Icon ?? <IoSchoolSharp />}</div>
+      <div>{Icon ?? <SchoolIcon />}</div>
       <div className="flex items-center justify-between gap-x-8 w-full">
         <span className="space-y-1">
           <h1 className="heading2">{title}</h1>
@@ -24,7 +24,7 @@ export default function EducationCard({
         </span>
         {certificateLink && (
           <a href={certificateLink} target="_blank">
-            <HiOutlineExternalLink className="text-gray text-3xl lg:text-2xl" />
+            <ExternalLink />
           </a>
         )}
       </div>

@@ -1,6 +1,7 @@
 import NavBar from "@/sections/NavBar";
 import Home from "@/sections/Home";
 import About from "@/sections/About";
+import Skills from "@/sections/Skills";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <NavBar />
       <Home />
       <About />
+      <Skills />
     </div>
   );
 }

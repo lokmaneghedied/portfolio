@@ -1,12 +1,12 @@
 import { Link } from "react-scroll";
-import { RiMenuLine } from "react-icons/ri";
-import { MdClose } from "react-icons/md";
 import logo from "@/assets/logo.webp";
 import { useState } from "react";
-import { HeaderLink } from "@/types";
+import { HeaderLinkType } from "@/types";
+import MenuHamburger from "@/assets/svg/MenuHamburger.svg";
+import CloseIcon from "@/assets/svg/CloseIcon.svg";
 
 export default function NavBar() {
-  const headerLinks: HeaderLink[] = [
+  const headerLinks: HeaderLinkType[] = [
     {
       title: "Home",
       link: "home",
@@ -44,11 +44,7 @@ export default function NavBar() {
             className="xl:hidden text-white"
             onClick={() => setIsNavOpen(!isNavOpen)}
           >
-            {isNavOpen ? (
-              <MdClose size="1.5rem" />
-            ) : (
-              <RiMenuLine size="1.5rem" />
-            )}
+            {isNavOpen ? <CloseIcon /> : <MenuHamburger />}
           </button>
         </div>
         <div

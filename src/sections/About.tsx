@@ -1,25 +1,25 @@
 import TitleTicket from "@/components/TitleTicket";
-import { BsStars } from "react-icons/bs";
 import about from "@/assets/about.webp";
 import EducationCard from "@/components/EducationCard";
-import { FaFreeCodeCamp } from "react-icons/fa";
-import { Education } from "@/types";
+import { EducationType } from "@/types";
+import FreeCodeCampIcon from "@/assets/svg/FreeCodeCampIcon.svg";
+import StarIcons from "@/assets/svg/StarsIcon.svg";
 
 export default function About() {
-  const educations: Education[] = [
+  const educations: EducationType[] = [
     {
       title: "JAVASCRIPT ALGORITHMS AND DATA STRUCTURES",
       date: "10/2022 – 11/2022: Freecodecamp.org",
       certificateLink:
         "https://www.freecodecamp.org/certification/lokmaneghedied/javascript-algorithms-and-data-structures",
-      Icon: <FaFreeCodeCamp />,
+      Icon: <FreeCodeCampIcon />,
     },
     {
       title: "SCIENTIFIC COMPUTING WITH PYTHON",
       date: "09/2022 – 10/2022: Freecodecamp.org",
       certificateLink:
         "https://www.freecodecamp.org/certification/lokmaneghedied/scientific-computing-with-python-v7",
-      Icon: <FaFreeCodeCamp />,
+      Icon: <FreeCodeCampIcon />,
     },
     {
       title:
@@ -36,7 +36,7 @@ export default function About() {
       id="about"
       className="sectionContainer flex flex-col items-center justify-center"
     >
-      <TitleTicket title="About Me" Icon={<BsStars />} />
+      <TitleTicket title="About Me" Icon={<StarIcons />} />
       <h1 className="heading1 text-secondary leading-tight">
         Innovative Web Developer Committed to Excellence
       </h1>
@@ -52,7 +52,7 @@ export default function About() {
       <div className="border border-grayBorder rounded-[10px] p-4 pb-0 bg-slate">
         <img loading="lazy" src={about} alt="lokmane ghedied image" />
       </div>
-      <TitleTicket title="Education" Icon={<BsStars />} />
+      <TitleTicket title="Education" Icon={<StarIcons />} />
       <h1 className="heading1 leading-tight">
         Academic Pursuits and Certifications
       </h1>
