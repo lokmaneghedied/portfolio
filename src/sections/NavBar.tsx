@@ -3,13 +3,32 @@ import { RiMenuLine } from "react-icons/ri";
 import { MdClose } from "react-icons/md";
 import logo from "@/assets/logo.webp";
 import { useState } from "react";
-import { headerLinks } from "@/constants";
+import { HeaderLink } from "@/types";
+
 export default function NavBar() {
+  const headerLinks: HeaderLink[] = [
+    {
+      title: "Home",
+      link: "home",
+    },
+    {
+      title: "About Me",
+      link: "about",
+    },
+    {
+      title: "Skills",
+      link: "skills",
+    },
+    {
+      title: "Work",
+      link: "work",
+    },
+  ];
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 flex justify-center items-center p-4 border-b border-grayBorder w-full backdrop-blur-2xl">
-      <div className="flex flex-col items-center xl:flex-row xl:justify-between w-full md:w-10/12 lg:w-4/5 xl:w-3/5 gap-8">
+    <header className="fixed top-0 flex justify-center items-center border-b border-grayBorder w-full backdrop-blur-2xl z-10">
+      <div className="flex flex-col items-center p-4 xl:flex-row xl:justify-between w-full md:w-10/12 lg:w-4/5 xl:w-3/5 gap-8">
         <div className="w-full xl:w-fit flex items-center justify-between">
           <Link
             to="home"
@@ -22,7 +41,7 @@ export default function NavBar() {
             <img src={logo} alt="my logo" />
           </Link>
           <button
-            className="xl:hidden"
+            className="xl:hidden text-white"
             onClick={() => setIsNavOpen(!isNavOpen)}
           >
             {isNavOpen ? (
@@ -33,7 +52,7 @@ export default function NavBar() {
           </button>
         </div>
         <div
-          className={`flex-col xl:flex-row justify-start items-center gap-6 xl:gap-8 w-full xl:w-fit ${
+          className={`flex-col xl:flex-row justify-start items-center gap-8 w-full xl:w-fit ${
             isNavOpen ? "flex" : "hidden xl:flex"
           } `}
         >

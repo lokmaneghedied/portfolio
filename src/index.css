@@ -11,6 +11,11 @@
 }
 
 @layer components {
+  /* Layout */
+  .sectionContainer {
+    @apply p-4 h-full w-full md:w-10/12 lg:w-4/5 xl:w-3/5 gap-8;
+  }
+  /* Text */
   .heading1 {
     @apply text-3xl lg:text-4xl xl:text-5xl font-bold text-white;
   }
@@ -21,12 +26,16 @@
     @apply text-base lg:text-lg xl:text-xl font-medium text-gray;
   }
   .details2 {
-    @apply text-sm font-normal;
+    @apply text-sm font-normal text-gray;
   }
+  /* Elements */
   .buttonPrimary {
     @apply w-full rounded-[10px] bg-primary p-4 text-center text-base xl:text-sm font-medium text-offWhite cursor-pointer lg:max-w-xs xl:w-40;
   }
   .buttonSecondary {
     @apply w-full rounded-[10px] bg-transparent p-4 text-center text-base xl:text-sm font-medium text-offWhite border border-grayBorder hover:bg-grayBorder transition-colors duration-300 cursor-pointer lg:max-w-xs xl:w-40;
+  }
+  .icon {
+    @apply cursor-pointer transition-all hover:scale-125;
   }
 }

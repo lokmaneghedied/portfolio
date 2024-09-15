@@ -6,11 +6,11 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="p-4 h-screen w-full md:w-10/12 lg:w-4/5 xl:w-3/5 flex flex-col items-center justify-center text-center gap-6 bg-custom-radial"
+      className="sectionContainer px-4 py-20 md:py-4 min-h-screen flex flex-col items-center justify-center text-center bg-custom-radial"
     >
       <TitleTicket
         title="Available for Opportunities"
-        icon={
+        Icon={
           <div className="relative w-3 h-3">
             <span className="absolute top-0 left-0 w-3 h-3 bg-green-500 block rounded-full"></span>
             <span className="absolute -top-[2px] -left-[2px] w-4 h-4 bg-green-500 block rounded-full animate-ping"></span>
@@ -18,7 +18,7 @@ export default function Home() {
         }
       />
       <h1 className="heading1 leading-tight">
-        I'm <b className="text-secondary">LOKMANE Ghedied,</b> <br />a Versatile
+        I'm <b className="text-secondary">Lokmane Ghedied,</b> <br />a Versatile
         Web Developer, Creative Technologist, and Digital Innovator
       </h1>
       <p className="details1">
@@ -26,7 +26,7 @@ export default function Home() {
         highly dynamic, and performant web applications that deliver exceptional
         user experiences.
       </p>
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-6 w-full">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-8 w-full">
         <Link
           to="contact"
           spy
