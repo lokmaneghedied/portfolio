@@ -10,8 +10,8 @@ export default {
           "75%": { transform: "translateX(-8px)" },
         },
         "slide-in-top": {
-          "0%": { transform: "translateY(0%)", opacity: "0" },
-          "5%": { transform: "translateY(5%)", opacity: "1" },
+          "0%": { transform: "translateY(-10%)", opacity: "0" },
+          "5%": { transform: "translateY(0%)", opacity: "1" },
           "95%": { transform: "translateY(50%)", opacity: "1" },
           "100%": { transform: "translateY(100%)", opacity: "0" },
         },

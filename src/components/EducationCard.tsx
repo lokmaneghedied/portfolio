@@ -23,7 +23,11 @@ export default function EducationCard({
           <p className="details2 ">{date}</p>
         </span>
         {certificateLink && (
-          <a href={certificateLink} target="_blank">
+          <a
+            href={certificateLink}
+            target="_blank"
+            className="hover:scale-105 text-gray hover:text-white transition-all duration-300"
+          >
             <ExternalLink />
           </a>
         )}

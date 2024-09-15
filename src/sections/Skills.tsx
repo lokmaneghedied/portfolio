@@ -1,3 +1,5 @@
+import { SkillType } from "@/types";
+import { useState } from "react";
 import TitleTicket from "@/components/TitleTicket";
 import StarsIcon from "@/assets/svg/StarsIcon.svg";
 import SkillCard from "@/components/SkillCard";
@@ -25,10 +27,11 @@ import {
   PostgressqlIcon,
   MongoDbIcon,
 } from "@/assets/svg/skillsIcons";
-
-import { SkillType } from "@/types";
+import DownArrow from "@/assets/svg/DownArrow.svg";
 
 export default function Skills() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   const techSkills: SkillType[] = [
     {
       title: "HTML",
@@ -153,11 +156,27 @@ export default function Skills() {
         create effective and engaging web solutions throughout my professional
         journey.
       </h1>
-      <div className="w-full gap-4 grid grid-cols-2 xl:grid-cols-3">
+      <div
+        className={`w-full gap-4 grid grid-cols-2 xl:grid-cols-3 overflow-hidden relative ${
+          isExpanded ? "max-h-full" : "max-h-96"
+        } `}
+      >
         {techSkills.map((skill, index) => (
           <SkillCard key={index} {...skill} />
         ))}
+        {!isExpanded && (
+          <div className="absolute bottom-0 left-0 w-full h-40 z-10 bg-gradient-to-b from-transparent to-dark"></div>
+        )}
       </div>
+      <button
+        className="buttonPrimary group"
+        onClick={() => setIsExpanded(!isExpanded)}
+      >
+        {isExpanded ? "Show less" : "See all skills"}
+        <span className={isExpanded ? "rotate-180" : ""}>
+          <DownArrow />
+        </span>
+      </button>
     </section>
   );
 }

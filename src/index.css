@@ -30,12 +30,15 @@
   }
   /* Elements */
   .buttonPrimary {
-    @apply w-full rounded-[10px] bg-primary p-4 text-center text-base xl:text-sm font-medium text-offWhite cursor-pointer lg:max-w-xs xl:w-40;
+    @apply flex items-center justify-center gap-2 w-full rounded-[10px] bg-primary p-4 text-center text-base xl:text-sm font-medium text-offWhite cursor-pointer lg:max-w-xs xl:w-40 hover:bg-primary/80 transition-all duration-300;
   }
   .buttonSecondary {
-    @apply w-full rounded-[10px] bg-transparent p-4 text-center text-base xl:text-sm font-medium text-offWhite border border-grayBorder hover:bg-grayBorder transition-colors duration-300 cursor-pointer lg:max-w-xs xl:w-40;
+    @apply flex items-center justify-center gap-2 w-full rounded-[10px] bg-transparent p-4 text-center text-base xl:text-sm font-medium text-offWhite border border-grayBorder hover:bg-grayBorder transition-colors duration-300 cursor-pointer lg:max-w-xs xl:w-40;
   }
   .icon {
     @apply cursor-pointer transition-all hover:scale-125;
+  }
+  .input {
+    @apply w-full p-4 rounded-[10px] outline-none bg-slate text-white placeholder:text-gray border border-grayBorder scroll-p-4;
   }
 }
