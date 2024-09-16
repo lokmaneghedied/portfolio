@@ -1,33 +1,15 @@
 import { Link } from "react-scroll";
 import logo from "@/assets/logo.webp";
 import { useState } from "react";
-import { HeaderLinkType } from "@/types";
 import MenuHamburger from "@/assets/svg/MenuHamburger.svg";
 import CloseIcon from "@/assets/svg/CloseIcon.svg";
+import { headerLinks } from "@/constants";
 
 export default function NavBar() {
-  const headerLinks: HeaderLinkType[] = [
-    {
-      title: "Home",
-      link: "home",
-    },
-    {
-      title: "About Me",
-      link: "about",
-    },
-    {
-      title: "Skills",
-      link: "skills",
-    },
-    {
-      title: "Work",
-      link: "work",
-    },
-  ];
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 flex justify-center items-center border-b border-grayBorder w-full backdrop-blur-2xl z-10">
+    <header className="fixed top-0 flex justify-center items-center border-b border-grayBorder w-full backdrop-blur-2xl z-30">
       <div className="flex flex-col items-center p-4 xl:flex-row xl:justify-between w-full md:w-10/12 lg:w-4/5 xl:w-3/5 gap-8">
         <div className="w-full xl:w-fit flex items-center justify-between">
           <Link
@@ -38,7 +20,7 @@ export default function NavBar() {
             onClick={() => setIsNavOpen(false)}
             className="w-10 h-10 cursor-pointer"
           >
-            <img src={logo} alt="my logo" />
+            <img src={logo} alt="lokmane ghedied logo" />
           </Link>
           <button
             className="xl:hidden text-white"

@@ -17,7 +17,7 @@
   }
   /* Text */
   .heading1 {
-    @apply text-3xl lg:text-4xl xl:text-5xl font-bold text-white;
+    @apply text-3xl lg:text-4xl xl:text-5xl font-bold text-white text-center;
   }
   .heading2 {
     @apply text-lg font-medium text-white;
@@ -41,4 +41,25 @@
   .input {
     @apply w-full p-4 rounded-[10px] outline-none bg-slate text-white placeholder:text-gray border border-grayBorder scroll-p-4;
   }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+::-webkit-scrollbar-track {
+  background-color: #0e0e0f;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6400e6;
+}
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #6400e6 #0e0e0f;
 }

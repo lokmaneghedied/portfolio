@@ -30,7 +30,9 @@ export default {
         offWhite: "#edeaf1",
         gray: "#adabb0",
         grayBorder: "#333338",
-        orange: "#ffb218",
+        orange: "#EB6200",
+        green: "#559d3a",
+        blue: "#145ff4",
       },
       backgroundImage: {
         "custom-radial":

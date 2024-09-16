@@ -151,11 +151,11 @@ export default function Skills() {
     >
       <TitleTicket title="Skills" Icon={<StarsIcon />} />
       <h1 className="heading1 leading-tight">Areas of Expertise</h1>
-      <h1 className="details1">
+      <p className="details1">
         Here are some of the skills that form the backbone of my ability to
         create effective and engaging web solutions throughout my professional
         journey.
-      </h1>
+      </p>
       <div
         className={`w-full gap-4 grid grid-cols-2 xl:grid-cols-3 overflow-hidden relative ${
           isExpanded ? "max-h-full" : "max-h-96"

@@ -9,12 +9,7 @@ import {
   MapsIcon,
 } from "@/assets/svg/contactsIcons";
 import ContactCard from "@/components/ContactCard";
-
-type ContactType = {
-  title: string;
-  Icon: React.ReactElement;
-  handleClick?: () => void;
-};
+import { ContactType } from "@/types";
 
 export default function Footer() {
   const contacts: ContactType[] = [
@@ -76,7 +71,7 @@ export default function Footer() {
         ))}
       </div>
       <p className="details2 absolute bottom-4 ">
-        September 2024 - LOKMANE GHEDIED
+        September 2024 - ⚡ by <b>Lokmane Ghedied</b>
       </p>
     </footer>
   );

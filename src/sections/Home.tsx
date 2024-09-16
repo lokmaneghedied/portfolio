@@ -1,8 +1,35 @@
 import { Link } from "react-scroll";
 import ScrollDownIndicator from "@/assets/svg/ScrollDownIndicator.svg";
+import DownArrow from "@/assets/svg/DownArrow.svg";
 import TitleTicket from "@/components/TitleTicket";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+  const lastScrollTop = useRef<number>(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollTop = document.documentElement.scrollTop;
+      const element = document.getElementById("scrollUpButton");
+      if (
+        element &&
+        (currentScrollTop == 0 || lastScrollTop.current <= currentScrollTop)
+      ) {
+        element.classList.add("hidden");
+      } else if (element) {
+        element.classList.remove("hidden");
+      }
+      lastScrollTop.current = currentScrollTop <= 0 ? 0 : currentScrollTop;
+    };
+    if (lastScrollTop.current === 0) {
+      handleScroll();
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section
       id="home"
@@ -46,6 +73,15 @@ export default function Home() {
         </a>
       </div>
       <ScrollDownIndicator />
+      <Link
+        id="scrollUpButton"
+        to="home"
+        smooth
+        duration={500}
+        className="fixed bottom-6 right-6 w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white rotate-180 cursor-pointer hover:bg-primary/80 transition-all duration-300 z-20"
+      >
+        <DownArrow />
+      </Link>
     </section>
   );
 }

@@ -113,7 +113,7 @@ export default function Contact() {
               <p className="text-sm text-red-600">{formik.errors.message}</p>
             )}
           </label>
-          <button className="buttonPrimary xl:max-w-full w-full" type="submit">
+          <button className="buttonPrimary lg:max-w-full w-full" type="submit">
             Send message
             <SendIcon />
           </button>
