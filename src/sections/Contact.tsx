@@ -2,6 +2,8 @@ import TitleTicket from "@/components/TitleTicket";
 import StarsIcon from "@/assets/svg/StarsIcon.svg";
 import SendIcon from "@/assets/svg/SendIcon.svg";
 import { useFormik, FormikErrors } from "formik";
+import { motion } from "framer-motion";
+import { fadeIn } from "../constants";
 
 type FormValues = {
   email: string;
@@ -45,13 +47,29 @@ export default function Contact() {
     >
       <div className="sectionContainer flex flex-col items-center justify-center">
         <TitleTicket title="Get in touch" Icon={<StarsIcon />} />
-        <h1 className="heading1 leading-tight">
+        <motion.h1
+          variants={fadeIn("left", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true }}
+          className="heading1 leading-tight"
+        >
           I am always looking for exciting projects.
-        </h1>
-        <p className="details1">
+        </motion.h1>
+        <motion.p
+          variants={fadeIn("left", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true }}
+          className="details1"
+        >
           Fill in the form or just use my contacts below
-        </p>
-        <form
+        </motion.p>
+        <motion.form
+          variants={fadeIn("left", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true }}
           onSubmit={formik.handleSubmit}
           className="w-full flex flex-col gap-4"
         >
@@ -117,7 +135,7 @@ export default function Contact() {
             Send message
             <SendIcon />
           </button>
-        </form>
+        </motion.form>
       </div>
     </section>
   );

@@ -28,6 +28,8 @@ import {
   MongoDbIcon,
 } from "@/assets/svg/skillsIcons";
 import DownArrow from "@/assets/svg/DownArrow.svg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../constants";
 
 export default function Skills() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -150,13 +152,31 @@ export default function Skills() {
       className="sectionContainer flex flex-col items-center justify-center"
     >
       <TitleTicket title="Skills" Icon={<StarsIcon />} />
-      <h1 className="heading1 leading-tight">Areas of Expertise</h1>
-      <p className="details1">
+      <motion.h1
+        variants={fadeIn("left", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true }}
+        className="heading1 leading-tight"
+      >
+        Areas of Expertise
+      </motion.h1>
+      <motion.p
+        variants={fadeIn("left", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true }}
+        className="details1"
+      >
         Here are some of the skills that form the backbone of my ability to
         create effective and engaging web solutions throughout my professional
         journey.
-      </p>
-      <div
+      </motion.p>
+      <motion.div
+        variants={fadeIn("left", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true }}
         className={`w-full gap-4 grid grid-cols-2 xl:grid-cols-3 overflow-hidden relative ${
           isExpanded ? "max-h-full" : "max-h-96"
         } `}
@@ -167,7 +187,7 @@ export default function Skills() {
         {!isExpanded && (
           <div className="absolute bottom-0 left-0 w-full h-40 z-10 bg-gradient-to-b from-transparent to-dark"></div>
         )}
-      </div>
+      </motion.div>
       <button
         className="buttonPrimary group"
         onClick={() => setIsExpanded(!isExpanded)}

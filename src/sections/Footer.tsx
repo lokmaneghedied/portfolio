@@ -10,6 +10,8 @@ import {
 } from "@/assets/svg/contactsIcons";
 import ContactCard from "@/components/ContactCard";
 import { ContactType } from "@/types";
+import { motion } from "framer-motion";
+import { fadeIn } from "../constants";
 
 export default function Footer() {
   const contacts: ContactType[] = [
@@ -64,12 +66,26 @@ export default function Footer() {
   return (
     <footer className="sectionContainer flex flex-col items-center justify-center py-16 relative">
       <TitleTicket title="Let's Be Friends" Icon={<StarsIcon />} />
-      <h1 className="heading1 leading-tight">Feel Free to Hit Me Up!</h1>
-      <div className="flex flex-col w-full gap-4 lg:grid lg:grid-cols-3 pb-4">
+      <motion.h1
+        variants={fadeIn("left", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true }}
+        className="heading1 leading-tight"
+      >
+        Feel Free to Hit Me Up!
+      </motion.h1>
+      <motion.div
+        variants={fadeIn("left", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true }}
+        className="flex flex-col w-full gap-4 lg:grid lg:grid-cols-3 pb-4"
+      >
         {contacts.map((item, index) => (
           <ContactCard key={index} {...item} />
         ))}
-      </div>
+      </motion.div>
       <p className="details2 absolute bottom-4 ">
         September 2024 - ⚡ by <b>Lokmane Ghedied</b>
       </p>

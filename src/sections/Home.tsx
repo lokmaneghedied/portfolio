@@ -3,6 +3,8 @@ import ScrollDownIndicator from "@/assets/svg/ScrollDownIndicator.svg";
 import DownArrow from "@/assets/svg/DownArrow.svg";
 import TitleTicket from "@/components/TitleTicket";
 import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../constants";
 
 export default function Home() {
   const lastScrollTop = useRef<number>(0);
@@ -39,21 +41,39 @@ export default function Home() {
         title="Available for Opportunities"
         Icon={
           <div className="relative w-3 h-3">
-            <span className="absolute top-0 left-0 w-3 h-3 bg-green-500 block rounded-full"></span>
-            <span className="absolute -top-[2px] -left-[2px] w-4 h-4 bg-green-500 block rounded-full animate-ping"></span>
+            <span className="absolute top-0 left-0 w-3 h-3 bg-green block rounded-full"></span>
+            <span className="absolute -top-[2px] -left-[2px] w-4 h-4 bg-green block rounded-full animate-ping"></span>
           </div>
         }
       />
-      <h1 className="heading1 leading-tight">
+      <motion.h1
+        variants={fadeIn("left", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true }}
+        className="heading1 leading-tight"
+      >
         I'm <b className="text-secondary">Lokmane Ghedied,</b> <br />a Versatile
         Web Developer, Creative Technologist, and Digital Innovator
-      </h1>
-      <p className="details1">
+      </motion.h1>
+      <motion.p
+        variants={fadeIn("left", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true }}
+        className="details1"
+      >
         Skilled web developer with a passion for creating fully interactive,
         highly dynamic, and performant web applications that deliver exceptional
         user experiences.
-      </p>
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-8 w-full">
+      </motion.p>
+      <motion.div
+        variants={fadeIn("left", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: true }}
+        className="flex flex-col lg:flex-row items-center justify-center gap-8 w-full"
+      >
         <Link
           to="contact"
           spy
@@ -71,7 +91,7 @@ export default function Home() {
         >
           View Resume
         </a>
-      </div>
+      </motion.div>
       <ScrollDownIndicator />
       <Link
         id="scrollUpButton"
