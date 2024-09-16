@@ -3,6 +3,7 @@ import Home from "@/sections/Home";
 import About from "@/sections/About";
 import Skills from "@/sections/Skills";
 import Contact from "@/sections/Contact";
+import Footer from "@/sections/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Skills />
       <Contact />
+      <Footer />
     </div>
   );
 }
