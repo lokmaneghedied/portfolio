@@ -86,7 +86,7 @@ export default function ProjectCard({
           {projectName}
         </h1>
         <p className={`details1 ${isExpanded ? "" : "truncate w-full"}`}>
-          <b>Technologies: </b> {technologies.join(" ,")}.
+          <b>Technologies: </b> {technologies.join(", ")}.
         </p>
         {isExpanded && (
           <span className="space-y-1">

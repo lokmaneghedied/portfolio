@@ -3,8 +3,6 @@ import ScrollDownIndicator from "@/assets/svg/ScrollDownIndicator.svg";
 import DownArrow from "@/assets/svg/DownArrow.svg";
 import TitleTicket from "@/components/TitleTicket";
 import { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
-import { fadeIn } from "../constants";
 
 export default function Home() {
   const lastScrollTop = useRef<number>(0);
@@ -46,42 +44,17 @@ export default function Home() {
           </div>
         }
       />
-      <motion.h1
-        variants={fadeIn("left", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: true }}
-        className="heading1 leading-tight"
-      >
+      <h1 className="heading1 leading-tight">
         I'm <b className="text-secondary">Lokmane Ghedied,</b> <br />a Versatile
         Web Developer, Creative Technologist, and Digital Innovator
-      </motion.h1>
-      <motion.p
-        variants={fadeIn("left", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: true }}
-        className="details1"
-      >
+      </h1>
+      <p className="details1">
         Skilled web developer with a passion for creating fully interactive,
         highly dynamic, and performant web applications that deliver exceptional
         user experiences.
-      </motion.p>
-      <motion.div
-        variants={fadeIn("left", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: true }}
-        className="flex flex-col lg:flex-row items-center justify-center gap-8 w-full"
-      >
-        <Link
-          to="contact"
-          spy
-          smooth
-          offset={-100}
-          duration={500}
-          className="buttonPrimary"
-        >
+      </p>
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-8 w-full">
+        <Link to="contact" spy smooth offset={-100} className="buttonPrimary">
           Let's Connect 👋
         </Link>
         <a
@@ -91,13 +64,12 @@ export default function Home() {
         >
           View Resume
         </a>
-      </motion.div>
+      </div>
       <ScrollDownIndicator />
       <Link
         id="scrollUpButton"
         to="home"
         smooth
-        duration={500}
         className="fixed bottom-6 right-6 w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white rotate-180 cursor-pointer hover:bg-primary/80 transition-all duration-300 z-20"
       >
         <DownArrow />

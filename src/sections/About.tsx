@@ -4,8 +4,6 @@ import EducationCard from "@/components/EducationCard";
 import { EducationType } from "@/types";
 import FreeCodeCampIcon from "@/assets/svg/FreeCodeCampIcon.svg";
 import StarIcons from "@/assets/svg/StarsIcon.svg";
-import { motion } from "framer-motion";
-import { fadeIn } from "../constants";
 
 export default function About() {
   const educations: EducationType[] = [
@@ -39,22 +37,10 @@ export default function About() {
       className="sectionContainer flex flex-col items-center justify-center"
     >
       <TitleTicket title="About Me" Icon={<StarIcons />} />
-      <motion.h1
-        variants={fadeIn("left", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: true }}
-        className="heading1 text-secondary leading-tight"
-      >
+      <h1 className="heading1 text-secondary leading-tight">
         Innovative Web Developer Committed to Excellence
-      </motion.h1>
-      <motion.p
-        variants={fadeIn("left", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: true }}
-        className="details1"
-      >
+      </h1>
+      <p className="details1">
         As an enthusiastic and adaptable web developer, I specialize in crafting
         cutting-edge, user-friendly applications that seamlessly blend form and
         function. Driven by a passion for continuous learning and technological
@@ -62,37 +48,19 @@ export default function About() {
         that set new standards for usability and design. With a keen eye for
         detail and a commitment to excellence, I am eager to contribute my
         skills and creativity to forward-thinking projects.
-      </motion.p>
-      <motion.div
-        variants={fadeIn("left", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: true }}
-        className="border border-grayBorder rounded-[10px] p-4 pb-0 bg-slate"
-      >
+      </p>
+      <div className="border border-grayBorder rounded-[10px] p-4 pb-0 bg-slate">
         <img loading="lazy" src={about} alt="lokmane ghedied image" />
-      </motion.div>
+      </div>
       <TitleTicket title="Education" Icon={<StarIcons />} />
-      <motion.h1
-        variants={fadeIn("left", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: true }}
-        className="heading1 leading-tight"
-      >
+      <h1 className="heading1 leading-tight">
         Academic Pursuits and Certifications
-      </motion.h1>
-      <motion.div
-        variants={fadeIn("left", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: true }}
-        className="flex flex-col w-full gap-4 lg:grid lg:grid-cols-2"
-      >
+      </h1>
+      <div className="flex flex-col w-full gap-4 lg:grid lg:grid-cols-2">
         {educations.map((item, index) => (
           <EducationCard key={index} {...item} />
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 }

@@ -16,7 +16,6 @@ export default function NavBar() {
             to="home"
             smooth
             offset={-100}
-            duration={500}
             onClick={() => setIsNavOpen(false)}
             className="w-10 h-10 cursor-pointer"
           >
@@ -40,7 +39,6 @@ export default function NavBar() {
               to={link}
               spy
               smooth
-              duration={500}
               offset={-100}
               activeClass="text-secondary"
               className="text-base xl:text-sm font-medium text-[#f7f6f7] cursor-pointer hover:scale-95 hover:text-gray transition-all duration-300"
@@ -55,7 +53,6 @@ export default function NavBar() {
           spy
           smooth
           offset={-100}
-          duration={500}
           className={`buttonPrimary xl:buttonSecondary ${
             isNavOpen ? "block" : "hidden xl:block"
           }`}

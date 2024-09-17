@@ -8,7 +8,7 @@ import Experience from "@/sections/Experience";
 
 function App() {
   return (
-    <div className="flex flex-col items-center bg-dark">
+    <div className="flex flex-col items-center bg-dark overflow-hidden">
       <NavBar />
       <Home />
       <About />

@@ -2,8 +2,7 @@ import TitleTicket from "@/components/TitleTicket";
 import StarsIcon from "@/assets/svg/StarsIcon.svg";
 import SendIcon from "@/assets/svg/SendIcon.svg";
 import { useFormik, FormikErrors } from "formik";
-import { motion } from "framer-motion";
-import { fadeIn } from "../constants";
+import { useState } from "react";
 
 type FormValues = {
   email: string;
@@ -12,14 +11,47 @@ type FormValues = {
 };
 
 export default function Contact() {
+  const [isLoading, setIsLoading] = useState(false);
   const formik = useFormik({
     initialValues: {
       email: "",
       subject: "",
       message: "",
     },
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: async (values) => {
+      try {
+        setIsLoading(true);
+        const response = await fetch(
+          "https://formsubmit.co/403f6d5a97a4dada6a9c1d148ede79ed",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(values),
+          }
+        );
+
+        const responseElement = document.getElementById("response");
+        if (!responseElement) throw new Error("Response element not found");
+
+        if (response.ok) {
+          responseElement.innerText = "Message sent successfully";
+          formik.resetForm();
+        } else {
+          responseElement.classList.add("text-red-500");
+          responseElement.innerText = "An error occurred. Please try again";
+        }
+      } catch (error) {
+        const responseElement = document.getElementById("response");
+        if (responseElement) {
+          responseElement.classList.add("text-red-500");
+          responseElement.innerText =
+            "An unexpected error occurred. Please try again";
+        }
+      } finally {
+        setIsLoading(false);
+      }
     },
     validate: (values) => {
       let errors: FormikErrors<FormValues> = {};
@@ -47,29 +79,13 @@ export default function Contact() {
     >
       <div className="sectionContainer flex flex-col items-center justify-center">
         <TitleTicket title="Get in touch" Icon={<StarsIcon />} />
-        <motion.h1
-          variants={fadeIn("left", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: true }}
-          className="heading1 leading-tight"
-        >
+        <h1 className="heading1 leading-tight">
           I am always looking for exciting projects.
-        </motion.h1>
-        <motion.p
-          variants={fadeIn("left", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: true }}
-          className="details1"
-        >
+        </h1>
+        <p className="details1">
           Fill in the form or just use my contacts below
-        </motion.p>
-        <motion.form
-          variants={fadeIn("left", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: true }}
+        </p>
+        <form
           onSubmit={formik.handleSubmit}
           className="w-full flex flex-col gap-4"
         >
@@ -131,11 +147,16 @@ export default function Contact() {
               <p className="text-sm text-red-600">{formik.errors.message}</p>
             )}
           </label>
-          <button className="buttonPrimary lg:max-w-full w-full" type="submit">
-            Send message
+          <button
+            disabled={isLoading}
+            className="buttonPrimary lg:max-w-full w-full"
+            type="submit"
+          >
+            {isLoading ? "Sending message..." : "Send message"}
             <SendIcon />
           </button>
-        </motion.form>
+          <p id="response" className="details1 text-green"></p>
+        </form>
       </div>
     </section>
   );
