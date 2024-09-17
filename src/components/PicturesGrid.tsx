@@ -34,7 +34,9 @@ export default function PicturesGrid({ pictures }: PicturesGridProps) {
         {pictures.map((picture, index) => (
           <div
             key={index}
-            className={`bg-slate rounded-[26px] border border-grayBorder p-4 col-span-1 w-fit row-span-${rowsSpans[index]}`}
+            className={`bg-slate rounded-[26px] border border-grayBorder p-4 col-span-1 w-fit ${
+              rowsSpans[index] === 1 ? "row-span-1" : "row-span-2"
+            }`}
           >
             <div className="overflow-hidden rounded-[10px] bg-offWhite w-60 h-full flex justify-center">
               <img
