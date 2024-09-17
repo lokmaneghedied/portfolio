@@ -1,6 +1,7 @@
 import TitleTicket from "@/components/TitleTicket";
 import StarsIcon from "@/assets/svg/StarsIcon.svg";
 import SendIcon from "@/assets/svg/SendIcon.svg";
+import LoaderIcon from "@/assets/svg/LoaderIcon.svg";
 import { useFormik, FormikErrors } from "formik";
 import { useState } from "react";
 
@@ -153,7 +154,7 @@ export default function Contact() {
             type="submit"
           >
             {isLoading ? "Sending message..." : "Send message"}
-            <SendIcon />
+            {isLoading ? <LoaderIcon /> : <SendIcon />}
           </button>
           <p id="response" className="details1 text-green"></p>
         </form>

@@ -28,27 +28,6 @@ export const headerLinks: HeaderLinkType[] = [
 
 export const workExperience: WorkExperienceType[] = [
   {
-    company: "LAZDEK LLC",
-    period: { from: "07/2023", to: "Now" },
-    projectName: "Wadjed – SAAS Solution for Restaurants",
-    projectImage: wadjed,
-    technologies: [
-      "Go",
-      "Templ",
-      "HTMX",
-      "AlpineJS",
-      "TailwindCSS",
-      "PostgreSQL",
-    ],
-    highlights: [
-      "Implemented a responsive digital menu and checkout pages, supporting various order types (delivery, takeoff, dine-in).",
-      "Developed an intuitive admin dashboard for seamless order management and menu item administration (create, edit, delete) with Zitaled for authentication.",
-      "Converted the app into a Progressive Web App (PWA) to enhance performance and user experience.",
-      "Built a notification system using WebPush and RabbitMQ for real-time updates.",
-    ],
-    brandColor: BrandColor.Orange,
-  },
-  {
     company: "Sunthetics",
     period: { from: "10/2023", to: "Now" },
     projectName: "Sunthetics Machine-Learning Platform",
@@ -70,6 +49,27 @@ export const workExperience: WorkExperienceType[] = [
       "Created and executed Cypress tests to ensure all functionalities and features work correctly and securely.",
     ],
     brandColor: BrandColor.Green,
+  },
+  {
+    company: "LAZDEK LLC",
+    period: { from: "07/2023", to: "Now" },
+    projectName: "Wadjed – SAAS Solution for Restaurants",
+    projectImage: wadjed,
+    technologies: [
+      "Go",
+      "Templ",
+      "HTMX",
+      "AlpineJS",
+      "TailwindCSS",
+      "PostgreSQL",
+    ],
+    highlights: [
+      "Implemented a responsive digital menu and checkout pages, supporting various order types (delivery, takeoff, dine-in).",
+      "Developed an intuitive admin dashboard for seamless order management and menu item administration (create, edit, delete) with Zitaled for authentication.",
+      "Converted the app into a Progressive Web App (PWA) to enhance performance and user experience.",
+      "Built a notification system using WebPush and RabbitMQ for real-time updates.",
+    ],
+    brandColor: BrandColor.Orange,
   },
   {
     company: "LAZDEK LLC",

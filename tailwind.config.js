@@ -15,12 +15,18 @@ export default {
           "95%": { transform: "translateY(50%)", opacity: "1" },
           "100%": { transform: "translateY(100%)", opacity: "0" },
         },
+        slide: {
+          "-10%": { transform: "translateX(-%10)" },
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         "spin-slow": "spin 10s linear infinite",
         shake: "shake 0.14s 3",
         "slide-in-top":
           "slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both",
+        slide: "slide 10s linear infinite",
       },
       colors: {
         primary: "#6400e6",
