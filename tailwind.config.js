@@ -47,6 +47,8 @@ export default {
       backgroundImage: {
         "custom-radial":
           "radial-gradient(50% 50% at 50% 50%, rgba(99, 0, 230, 0.23) 0%, rgb(14, 14, 16) 100%)",
+        "custom-radial-white":
+          "radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.80) 0%, rgba(255, 255, 255, 0) 100%)",
         contact: "url('/src/assets/contact.avif')",
       },
     },
