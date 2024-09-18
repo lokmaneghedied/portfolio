@@ -20,6 +20,9 @@ export default {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-100%)" },
         },
+        loading: {
+          "50%": { transform: "rotate(-80deg)" },
+        },
       },
       animation: {
         "spin-slow": "spin 10s linear infinite",
@@ -27,6 +30,7 @@ export default {
         "slide-in-top":
           "slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both",
         slide: "slide 10s linear infinite",
+        loading: "loading 2.5s ease-in-out infinite",
       },
       colors: {
         primary: "#6400e6",

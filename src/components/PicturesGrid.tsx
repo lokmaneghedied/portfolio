@@ -42,6 +42,7 @@ export default function PicturesGrid({ pictures }: PicturesGridProps) {
               <img
                 src={picture}
                 alt="Project image"
+                loading="lazy"
                 className="h-full w-full object-contain"
               />
             </div>

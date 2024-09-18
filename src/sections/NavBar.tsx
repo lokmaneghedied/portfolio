@@ -19,7 +19,7 @@ export default function NavBar() {
             onClick={() => setIsNavOpen(false)}
             className="w-10 h-10 cursor-pointer"
           >
-            <img src={logo} alt="lokmane ghedied logo" />
+            <img src={logo} loading="lazy" alt="lokmane ghedied logo" />
           </Link>
           <button
             className="xl:hidden text-white"
