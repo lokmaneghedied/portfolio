@@ -18,9 +18,8 @@ export default function PersonalProjects() {
       <TitleTicket title="Personal Projects" Icon={<StarsIcon />} />
       <h1 className="heading1 leading-tight">Latest Personal Projects</h1>
       <p className="details1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, unde
-        iusto. Consequatur aperiam amet architecto sunt magnam tempore odit cum
-        illum iste labore quas optio possimus molestias, pariatur eos. Enim.
+        A collection of my personal projects that showcase my skills in web
+        development.
       </p>
       <PicturesGrid
         pictures={[
