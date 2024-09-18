@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import logo from "@/assets/logo.webp";
+import Logo from "@/assets/svg/logo.svg";
 import { useState } from "react";
 import MenuHamburger from "@/assets/svg/MenuHamburger.svg";
 import CloseIcon from "@/assets/svg/CloseIcon.svg";
@@ -17,9 +17,9 @@ export default function NavBar() {
             smooth
             offset={-100}
             onClick={() => setIsNavOpen(false)}
-            className="w-10 h-10 cursor-pointer"
+            className="cursor-pointer"
           >
-            <img src={logo} loading="lazy" alt="lokmane ghedied logo" />
+            <Logo />
           </Link>
           <button
             className="xl:hidden text-white"
