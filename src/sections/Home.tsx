@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="sectionContainer px-4 py-20 md:py-4 min-h-screen flex flex-col items-center justify-center text-center bg-custom-radial"
+      className="sectionContainer px-4 pt-24 md:py-4 min-h-screen flex flex-col items-center justify-center text-center bg-custom-radial"
     >
       <TitleTicket
         title="Available for Opportunities"
