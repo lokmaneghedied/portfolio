@@ -3,7 +3,7 @@ import StarsIcon from "@/assets/svg/StarsIcon.svg";
 import {
   LinkedInIcon,
   GithubIcon,
-  RedditIcon,
+  GmailIcon,
   WhatsappIcon,
   PhoneIcon,
   MapsIcon,
@@ -28,10 +28,16 @@ export default function Footer() {
       },
     },
     {
-      title: "Reddit",
-      Icon: <RedditIcon />,
+      title: "Gmail",
+      Icon: <GmailIcon />,
       handleClick: () => {
-        window.open("https://www.reddit.com/user/lokmaneghedied/");
+        if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+          window.open("mailto:lokmane.ghedied@gmail.com?subject=&body=");
+        } else {
+          window.open(
+            "https://mail.google.com/mail/?view=cm&fs=1&to=lokmane.ghedied@gmail.com"
+          );
+        }
       },
     },
     {
