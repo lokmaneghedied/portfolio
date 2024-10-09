@@ -23,7 +23,7 @@ export default function Contact() {
       try {
         setIsLoading(true);
         const response = await fetch(
-          "https://formsubmit.co/403f6d5a97a4dada6a9c1d148ede79ed",
+          "https://formsubmit.co/ajax/lokmane.ghedied@gmail.com",
           {
             method: "POST",
             headers: {
