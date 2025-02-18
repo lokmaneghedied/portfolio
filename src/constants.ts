@@ -29,7 +29,7 @@ export const headerLinks: HeaderLinkType[] = [
 export const workExperience: WorkExperienceType[] = [
   {
     company: "Sunthetics",
-    period: { from: "10/2023", to: "Now" },
+    period: { from: "10/2023", to: "01/2025" },
     projectName: "Sunthetics Machine-Learning Platform",
     projectImage: sunthetics,
     technologies: [
@@ -52,7 +52,7 @@ export const workExperience: WorkExperienceType[] = [
   },
   {
     company: "LAZDEK LLC",
-    period: { from: "07/2023", to: "Now" },
+    period: { from: "07/2023", to: "10/2024" },
     projectName: "Wadjed – SAAS Solution for Restaurants",
     projectImage: wadjed,
     technologies: [

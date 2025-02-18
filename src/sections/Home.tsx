@@ -58,7 +58,7 @@ export default function Home() {
           Let's Connect 👋
         </Link>
         <a
-          href="https://drive.google.com/file/d/1G3whwlWPv-ef9cBGQR1RzRzIoZVDV2O-/view?usp=sharing"
+          href="https://drive.google.com/file/d/1PViSp847c4uUnPljcX_X2SoqQ6jxUxvp/view"
           target="_blank"
           className="buttonSecondary"
         >
